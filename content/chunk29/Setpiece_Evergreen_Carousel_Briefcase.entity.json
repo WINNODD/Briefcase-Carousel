@@ -392,7 +392,14 @@
 				},
 				"Clients": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["cafef0271a3f6e02"],
+					"value": [
+						"cafe68a89c29d925",
+						"cafe642244ddfe2a",
+						"cafe67650b0e9639",
+						"cafe6adec838c898",
+						"cafe236178dc9574",
+						"cafefbd0a34b9bce"
+					],
 					"postInit": true
 				},
 				"m_eidParent": {
@@ -2721,7 +2728,7 @@
 					"type": "SMatrix43",
 					"value": {
 						"rotation": { "x": 90.0, "y": 0, "z": 90.0 },
-						"position": { "x": 0.59, "y": 0.0, "z": 2.43 }
+						"position": { "x": 0.6, "y": 0.0, "z": 2.43 }
 					}
 				},
 				"m_bVisibleInBoxReflection": {
@@ -2845,7 +2852,7 @@
 					"type": "SMatrix43",
 					"value": {
 						"rotation": { "x": 90, "y": 0, "z": 180 },
-						"position": { "x": 0, "y": -0.58, "z": 0.525 }
+						"position": { "x": 0, "y": -0.59, "z": 0.525 }
 					}
 				},
 				"m_bVisibleInBoxReflection": {
@@ -2907,7 +2914,7 @@
 					"type": "SMatrix43",
 					"value": {
 						"rotation": { "x": 90.0, "y": 0.0, "z": -90.0 },
-						"position": { "x": -0.58, "y": -0.0, "z": 1.955 }
+						"position": { "x": -0.58, "y": -0.0, "z": 1.94 }
 					}
 				},
 				"m_bVisibleInBoxReflection": {
@@ -2969,7 +2976,7 @@
 					"type": "SMatrix43",
 					"value": {
 						"rotation": { "x": 90.0, "y": 0.0, "z": -90.0 },
-						"position": { "x": -0.58, "y": -0.0, "z": 2.43 }
+						"position": { "x": -0.58, "y": -0.0, "z": 2.44 }
 					}
 				},
 				"m_bVisibleInBoxReflection": {
@@ -3300,8 +3307,8 @@
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
 		"cafe3804d3797a45": {
-			"parent": "cafea7d9fb1bf494",
-			"name": "Light 1",
+			"parent": "cafef0271a3f6e02",
+			"name": "Light inside right",
 			"factory": "[modules:/zlightentity.class].pc_entitytype",
 			"blueprint": "[modules:/zlightentity.class].pc_entityblueprint",
 			"properties": {
@@ -3374,7 +3381,7 @@
 			}
 		},
 		"cafec497d984e752": {
-			"parent": "cafea7d9fb1bf494",
+			"parent": "cafef0271a3f6e02",
 			"name": "Light 3",
 			"factory": "[modules:/zlightentity.class].pc_entitytype",
 			"blueprint": "[modules:/zlightentity.class].pc_entityblueprint",
@@ -3383,7 +3390,7 @@
 					"type": "SMatrix43",
 					"value": {
 						"rotation": { "x": 0.0, "y": 0.0, "z": 0.0 },
-						"position": { "x": 0.0, "y": -0.5, "z": 1.8 }
+						"position": { "x": 1.5, "y": -2.5, "z": 1.8 }
 					}
 				},
 				"m_eLightType": {
@@ -3789,8 +3796,8 @@
 			}
 		},
 		"cafe0e47a7358366": {
-			"parent": "cafea7d9fb1bf494",
-			"name": "Light 0",
+			"parent": "cafef0271a3f6e02",
+			"name": "Light inside left",
 			"factory": "[modules:/zlightentity.class].pc_entitytype",
 			"blueprint": "[modules:/zlightentity.class].pc_entityblueprint",
 			"properties": {
@@ -3823,7 +3830,10 @@
 						"y": 0.7853981852531433
 					}
 				},
-				"m_fCapsuleHeight": { "type": "float32", "value": 2.0 },
+				"m_fCapsuleHeight": {
+					"type": "float32",
+					"value": 2.3625290393829346
+				},
 				"m_diffuseColor": {
 					"type": "SColorRGB",
 					"value": "#90ccd4"
@@ -3953,7 +3963,7 @@
 			}
 		},
 		"cafe58c423d5ddc1": {
-			"parent": "cafea7d9fb1bf494",
+			"parent": "cafef0271a3f6e02",
 			"name": "Light 2",
 			"factory": "[modules:/zlightentity.class].pc_entitytype",
 			"blueprint": "[modules:/zlightentity.class].pc_entityblueprint",
@@ -3961,8 +3971,8 @@
 				"m_mTransform": {
 					"type": "SMatrix43",
 					"value": {
-						"rotation": { "x": 0.0, "y": 0.0, "z": 0.0 },
-						"position": { "x": 0.5, "y": 0.0, "z": 1.8 }
+						"rotation": { "x": 0.0, "y": 0.0, "z": 90.0 },
+						"position": { "x": 2.5, "y": -1.5, "z": 1.8 }
 					}
 				},
 				"m_eLightType": {

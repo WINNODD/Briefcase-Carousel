@@ -10,6 +10,9 @@
     "contentFolders": [
         "content"
     ],
+	"thumbs": [
+		"ConsoleCmd OnlineResources_Disable 1"
+	],
 	"dependencies": [
 		{
 			"comment": "hokkaido_restaurant_bar_light_a",

@@ -291,25 +291,6 @@
 				}
 			}
 		},
-		"fd116d00b63fc927": {
-			"parent": "dbbbed4658c2b0ae",
-			"name": "Add item to awarded items",
-			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_repositoryid.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_repositoryid.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_rChannelToken": {
-					"type": "SEntityTemplateReference",
-					"value": "f8e67588fde1a9a0",
-					"postInit": true
-				}
-			}
-		},
-		"7e9414792b2337ea": {
-			"parent": "befbb178b8571b44",
-			"name": "EventToken_Evergreen_Gear_InventoryItemLoaded",
-			"factory": "[assembly:/_pro/design/gamecore/events/eventtokens_evergreen.template?/eventtoken_evergreen_gear_inventoryitemloaded.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/gamecore/events/eventtokens_evergreen.template?/eventtoken_evergreen_gear_inventoryitemloaded.entitytemplate].pc_entityblueprint"
-		},
 		"eeff8c3738b34225": {
 			"parent": "0cd5d1c19b606cb9",
 			"name": "EventChannelReceiver_ValueBool",
@@ -380,21 +361,6 @@
 				}
 			}
 		},
-		"f14dd3b63c70bb68": {
-			"parent": "dbbbed4658c2b0ae",
-			"name": "Repository ID",
-			"factory": "[modules:/zmetricvalue_zrepositoryid.class].pc_entitytype",
-			"blueprint": "[modules:/zmetricvalue_zrepositoryid.class].pc_entityblueprint",
-			"properties": {
-				"m_value": {
-					"type": "ZGuid",
-					"value": "00000000-0000-0000-0000-000000000000"
-				}
-			},
-			"events": {
-				"Value": { "TransmitEvent": ["fd116d00b63fc927"] }
-			}
-		},
 		"8beac9e5dd26305b": {
 			"parent": "76bc7debe63916b6",
 			"name": "Not placed cursor",
@@ -445,16 +411,6 @@
 				}
 			}
 		},
-		"9e2de6bd7af4ac9e": {
-			"parent": "dbbbed4658c2b0ae",
-			"name": "Wait a frame",
-			"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"Delay time (ms)": { "type": "int32", "value": 33 }
-			},
-			"events": { "Out": { "Poll": ["3692b6ada59b100e"] } }
-		},
 		"1b787050d609dde2": {
 			"parent": "ff28c16eb9073f6e",
 			"name": "Inventory item action",
@@ -475,19 +431,6 @@
 			"events": {
 				"Out01": { "SetContext": ["ecc8cc42570f8d38"] },
 				"Out02": { "Open": ["4daf582b92b59e2d"] }
-			}
-		},
-		"6324686f52352376": {
-			"parent": "dbbbed4658c2b0ae",
-			"name": "Set item owned",
-			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_rValueEntity": {
-					"type": "SEntityTemplateReference",
-					"value": "64fbe690fc534c94",
-					"postInit": true
-				}
 			}
 		},
 		"ebcb9f73ac6dd507": {
@@ -527,12 +470,6 @@
 					"postInit": true
 				}
 			}
-		},
-		"cc0eddf86e11bee0": {
-			"parent": "befbb178b8571b44",
-			"name": "EventToken_Evergreen_Gear_SafehouseItemLoaded",
-			"factory": "[assembly:/_pro/design/gamecore/events/eventtokens_evergreen.template?/eventtoken_evergreen_gear_safehouseitemloaded.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/gamecore/events/eventtokens_evergreen.template?/eventtoken_evergreen_gear_safehouseitemloaded.entitytemplate].pc_entityblueprint"
 		},
 		"4c974998a1c29abe": {
 			"parent": "dd218b2743991ca8",
@@ -576,20 +513,6 @@
 					"postInit": true
 				}
 			}
-		},
-		"4635df3caa298838": {
-			"parent": "dbbbed4658c2b0ae",
-			"name": "Selected",
-			"factory": "[modules:/zevergreenmenuentrycondition.class].pc_entitytype",
-			"blueprint": "[modules:/zevergreenmenuentrycondition.class].pc_entityblueprint",
-			"properties": {
-				"m_subject": {
-					"type": "SEntityTemplateReference",
-					"value": "dd218b2743991ca8",
-					"postInit": true
-				}
-			},
-			"events": { "OnTrue": { "SetFalse": ["2413f98d4a1f4ac3"] } }
 		},
 		"f004b289af3f9e5c": {
 			"parent": "a7bdfc443af34ab8",
@@ -639,19 +562,6 @@
 				}
 			}
 		},
-		"defd1e2c3c98b632": {
-			"parent": "befbb178b8571b44",
-			"name": "Set item owned",
-			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_rValueEntity": {
-					"type": "SEntityTemplateReference",
-					"value": "64fbe690fc534c94",
-					"postInit": true
-				}
-			}
-		},
 		"ef72d1f0d4a1ddde": {
 			"parent": "bef5f48cb59b9dab",
 			"name": "EvergreenGearUnlockChallengeInfo",
@@ -677,18 +587,6 @@
 				"m_rValueEntity": {
 					"type": "SEntityTemplateReference",
 					"value": "75fea0acdd24c034"
-				}
-			}
-		},
-		"acce7665084a7786": {
-			"parent": "befbb178b8571b44",
-			"name": "ItemRepositoryKey",
-			"factory": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
-			"blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
-			"properties": {
-				"m_RepositoryId": {
-					"type": "ZGuid",
-					"value": "00000000-0000-0000-0000-000000000000"
 				}
 			}
 		},
@@ -740,19 +638,6 @@
 				"m_rValueEntity": {
 					"type": "SEntityTemplateReference",
 					"value": "15fbf45986917512",
-					"postInit": true
-				}
-			}
-		},
-		"215c9118d300c7b2": {
-			"parent": "8375a8be32ea9189",
-			"name": "Send safehouse item",
-			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_repositoryid.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_repositoryid.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_rChannelToken": {
-					"type": "SEntityTemplateReference",
-					"value": "568e433e664bb34f",
 					"postInit": true
 				}
 			}
@@ -848,25 +733,6 @@
 					"value": "64fbe690fc534c94"
 				}
 			}
-		},
-		"1f7474bdbb7b9344": {
-			"parent": "dbbbed4658c2b0ae",
-			"name": "EventToken_Evergreen_AwardedItems_ItemAwarded",
-			"factory": "[assembly:/_pro/design/gamecore/events/eventtokens_evergreen.template?/eventtoken_evergreen_awardeditems_itemawarded.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/gamecore/events/eventtokens_evergreen.template?/eventtoken_evergreen_awardeditems_itemawarded.entitytemplate].pc_entityblueprint"
-		},
-		"8cc801492feeb8f8": {
-			"parent": "dbbbed4658c2b0ae",
-			"name": "On item awarded",
-			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_repositoryid.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_repositoryid.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_rChannelToken": {
-					"type": "SEntityTemplateReference",
-					"value": "1f7474bdbb7b9344"
-				}
-			},
-			"events": { "EventReceived": { "In": ["11034d402a6d6458"] } }
 		},
 		"5f410a1a217f1bef": {
 			"parent": "a7bdfc443af34ab8",
@@ -996,21 +862,6 @@
 				}
 			}
 		},
-		"d65b673dab3fcf6f": {
-			"parent": "8375a8be32ea9189",
-			"name": "Item repository ID",
-			"factory": "[modules:/zmetricvalue_zrepositoryid.class].pc_entitytype",
-			"blueprint": "[modules:/zmetricvalue_zrepositoryid.class].pc_entityblueprint",
-			"properties": {
-				"m_value": {
-					"type": "ZGuid",
-					"value": "00000000-0000-0000-0000-000000000000"
-				}
-			},
-			"events": {
-				"Value": { "TransmitEvent": ["215c9118d300c7b2"] }
-			}
-		},
 		"ed716e618702d032": {
 			"parent": "0cd5d1c19b606cb9",
 			"name": "EventToken_Sound_Evergreen_47_Bought_From_Supplier",
@@ -1040,24 +891,6 @@
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_bValue": { "type": "bool", "value": false }
-			}
-		},
-		"321900bf5355cc72": {
-			"parent": "befbb178b8571b44",
-			"name": "Spawn item on match if gear wall",
-			"factory": "[modules:/zrepositorykeycomparatorentity.class].pc_entitytype",
-			"blueprint": "[modules:/zrepositorykeycomparatorentity.class].pc_entityblueprint",
-			"properties": {
-				"m_RepositoryKey": {
-					"type": "SEntityTemplateReference",
-					"value": "acce7665084a7786"
-				}
-			},
-			"events": {
-				"OnTrue": {
-					"SetTrue": ["defd1e2c3c98b632"],
-					"Poll": ["0d542ebc2d9aa18d"]
-				}
 			}
 		},
 		"08f806162c58cab0": {
@@ -1133,12 +966,6 @@
 				}
 			}
 		},
-		"f8e67588fde1a9a0": {
-			"parent": "dbbbed4658c2b0ae",
-			"name": "EventToken_Evergreen_AwardedItems_Add",
-			"factory": "[assembly:/_pro/design/gamecore/events/eventtokens_evergreen.template?/eventtoken_evergreen_awardeditems_add.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/gamecore/events/eventtokens_evergreen.template?/eventtoken_evergreen_awardeditems_add.entitytemplate].pc_entityblueprint"
-		},
 		"d38e68473fe3a9b7": {
 			"parent": "ff28c16eb9073f6e",
 			"name": "Return item match",
@@ -1157,24 +984,6 @@
 			"name": "EventToken_Evergreen_SelectableItem_Purchased",
 			"factory": "[assembly:/_pro/design/gamecore/events/eventtokens_evergreen.template?/eventtoken_evergreen_selectableitem_purchased.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/gamecore/events/eventtokens_evergreen.template?/eventtoken_evergreen_selectableitem_purchased.entitytemplate].pc_entityblueprint"
-		},
-		"b8ae3b5cd672451e": {
-			"parent": "befbb178b8571b44",
-			"name": "EventToken_Evergreen_Gear_SafehouseItemRemoved",
-			"factory": "[assembly:/_pro/design/gamecore/events/eventtokens_evergreen.template?/eventtoken_evergreen_gear_safehouseitemremoved.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/gamecore/events/eventtokens_evergreen.template?/eventtoken_evergreen_gear_safehouseitemremoved.entitytemplate].pc_entityblueprint"
-		},
-		"b4da20a580a21989": {
-			"parent": "dbbbed4658c2b0ae",
-			"name": "ItemRepositoryKey",
-			"factory": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
-			"blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
-			"properties": {
-				"m_RepositoryId": {
-					"type": "ZGuid",
-					"value": "00000000-0000-0000-0000-000000000000"
-				}
-			}
 		},
 		"6fc472be73793370": {
 			"parent": "a7bdfc443af34ab8",
@@ -1324,38 +1133,12 @@
 				"ActionTriggered": { "ShowInMenu": ["609ea36bca89e3f2"] }
 			}
 		},
-		"5678ca9b4c4a2da4": {
-			"parent": "befbb178b8571b44",
-			"name": "On safehouse item loaded",
-			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_repositoryid.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_repositoryid.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_rChannelToken": {
-					"type": "SEntityTemplateReference",
-					"value": "cc0eddf86e11bee0"
-				}
-			},
-			"events": { "EventReceived": { "In": ["321900bf5355cc72"] } }
-		},
 		"12122e4edf023803": {
 			"parent": "76bc7debe63916b6",
 			"name": "Locked by entitlement",
 			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entityblueprint",
 			"properties": {}
-		},
-		"a2b709de5e8d5e5e": {
-			"parent": "befbb178b8571b44",
-			"name": "Set item owned on match",
-			"factory": "[modules:/zrepositorykeycomparatorentity.class].pc_entitytype",
-			"blueprint": "[modules:/zrepositorykeycomparatorentity.class].pc_entityblueprint",
-			"properties": {
-				"m_RepositoryKey": {
-					"type": "SEntityTemplateReference",
-					"value": "acce7665084a7786"
-				}
-			},
-			"events": { "OnTrue": { "SetTrue": ["defd1e2c3c98b632"] } }
 		},
 		"11de4c33001422f4": {
 			"parent": "609ea36bca89e3f2",
@@ -1433,12 +1216,6 @@
 			"factory": "[assembly:/_pro/design/gamecore/events/eventtokens_evergreen.template?/eventtoken_evergreen_selectableitem_selected.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/gamecore/events/eventtokens_evergreen.template?/eventtoken_evergreen_selectableitem_selected.entitytemplate].pc_entityblueprint"
 		},
-		"568e433e664bb34f": {
-			"parent": "8375a8be32ea9189",
-			"name": "EventToken_Evergreen_Gear_SafehouseItem",
-			"factory": "[assembly:/_pro/design/gamecore/events/eventtokens_evergreen.template?/eventtoken_evergreen_gear_safehouseitem.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/gamecore/events/eventtokens_evergreen.template?/eventtoken_evergreen_gear_safehouseitem.entitytemplate].pc_entityblueprint"
-		},
 		"c5699efae1b264b0": {
 			"parent": "dd218b2743991ca8",
 			"name": "Unlocked",
@@ -1499,30 +1276,6 @@
 				"m_sPageName": { "type": "ZString", "value": "logbook" }
 			}
 		},
-		"2413f98d4a1f4ac3": {
-			"parent": "dbbbed4658c2b0ae",
-			"name": "Just awarded",
-			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
-			"events": {
-				"OnTrue": { "Show": ["9cd4d10906533e3a"] },
-				"OnFalse": { "Hide": ["9cd4d10906533e3a"] },
-				"OnValue": { "SetVisible": ["31001ddbad2423f7"] }
-			}
-		},
-		"11034d402a6d6458": {
-			"parent": "dbbbed4658c2b0ae",
-			"name": "Set item awarded on match",
-			"factory": "[modules:/zrepositorykeycomparatorentity.class].pc_entitytype",
-			"blueprint": "[modules:/zrepositorykeycomparatorentity.class].pc_entityblueprint",
-			"properties": {
-				"m_RepositoryKey": {
-					"type": "SEntityTemplateReference",
-					"value": "b4da20a580a21989"
-				}
-			},
-			"events": { "OnTrue": { "SetTrue": ["c1e74dbc865f13b1"] } }
-		},
 		"6bc51f027c661f6a": {
 			"parent": "a7bdfc443af34ab8",
 			"name": "Lerp pose between rest and inspect",
@@ -1570,19 +1323,6 @@
 					"postInit": true
 				}
 			}
-		},
-		"ed649e794bac670d": {
-			"parent": "befbb178b8571b44",
-			"name": "On inventory item loaded",
-			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_repositoryid.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_repositoryid.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_rChannelToken": {
-					"type": "SEntityTemplateReference",
-					"value": "7e9414792b2337ea"
-				}
-			},
-			"events": { "EventReceived": { "In": ["a2b709de5e8d5e5e"] } }
 		},
 		"03791a837d950f8e": {
 			"parent": "ff28c16eb9073f6e",
@@ -1867,19 +1607,6 @@
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entityblueprint",
 			"properties": { "m_bValue": { "type": "bool", "value": true } }
 		},
-		"38becd94dc3556d8": {
-			"parent": "dbbbed4658c2b0ae",
-			"name": "Unlocked",
-			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_rValueEntity": {
-					"type": "SEntityTemplateReference",
-					"value": "e66e0ee9415772c0"
-				}
-			},
-			"events": { "PollTrue": { "Poll": ["f1eb1cee47afc92b"] } }
-		},
 		"f319ecd8210df127": {
 			"parent": "ff28c16eb9073f6e",
 			"name": "Pick up and send selected",
@@ -1918,20 +1645,6 @@
 				}
 			}
 		},
-		"5b9ff9b118dd9ae4": {
-			"parent": "8375a8be32ea9189",
-			"name": "On get safehouse items",
-			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_rChannelToken": {
-					"type": "SEntityTemplateReference",
-					"value": "605ea497ffaa6632",
-					"postInit": true
-				}
-			},
-			"events": { "EventReceived": { "Poll": ["3e575336edfb2753"] } }
-		},
 		"2db46906b7f1680c": {
 			"parent": "76bc7debe63916b6",
 			"name": "Retrieve",
@@ -1959,19 +1672,6 @@
 				"ActionTriggered": { "Retrieve": ["76bc7debe63916b6"] }
 			}
 		},
-		"7bcd19fcd43449f1": {
-			"parent": "befbb178b8571b44",
-			"name": "EventChannelReceiver_RepositoryID",
-			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_repositoryid.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_repositoryid.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_rChannelToken": {
-					"type": "SEntityTemplateReference",
-					"value": "b8ae3b5cd672451e"
-				}
-			},
-			"events": { "EventReceived": { "In": ["bc7f22b3fd787d45"] } }
-		},
 		"26f046d6c68e2955": {
 			"parent": "a7bdfc443af34ab8",
 			"name": "SpatialTransformRestore",
@@ -1994,35 +1694,6 @@
 				"OnFailed": { "PickupIntoHands": ["05a47eed8ac146cc"] },
 				"Item": { "TransmitEvent": ["fcd5b5f210301e49"] }
 			}
-		},
-		"31dfa048d4e9a173": {
-			"parent": "dbbbed4658c2b0ae",
-			"name": "Give when unlocked",
-			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_repository.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_repository.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_sPath": {
-					"type": "ZString",
-					"value": "Evergreen_GiveWhenUnlocked"
-				},
-				"m_sRepositoryID": {
-					"type": "ZGuid",
-					"value": "00000000-0000-0000-0000-000000000000"
-				}
-			}
-		},
-		"f1eb1cee47afc92b": {
-			"parent": "dbbbed4658c2b0ae",
-			"name": "Poll give when unlocked",
-			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_rValueEntity": {
-					"type": "SEntityTemplateReference",
-					"value": "31dfa048d4e9a173"
-				}
-			},
-			"events": { "PollTrue": { "Poll": ["0a4daaf0a06c9a0d"] } }
 		},
 		"8e2e373ec0de7d8a": {
 			"parent": "76bc7debe63916b6",
@@ -2076,78 +1747,6 @@
 			},
 			"events": { "PollTrue": { "Send": ["403525c6f0aaf4ec"] } }
 		},
-		"0d542ebc2d9aa18d": {
-			"parent": "befbb178b8571b44",
-			"name": "Spawn if gear wall",
-			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_rValueEntity": {
-					"type": "SEntityTemplateReference",
-					"value": "13c9381ee813044d"
-				}
-			},
-			"outputCopying": {
-				"PollTrue": { "Loaded": ["befbb178b8571b44"] }
-			}
-		},
-		"befbb178b8571b44": {
-			"parent": "b0906e8ecb81a1b0",
-			"name": "Item loader",
-			"factory": "[modules:/zentity.class].pc_entitytype",
-			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
-			"properties": {
-				"Owned": {
-					"type": "SEntityTemplateReference",
-					"value": "64fbe690fc534c94"
-				},
-				"GearWall": {
-					"type": "SEntityTemplateReference",
-					"value": "13c9381ee813044d"
-				},
-				"RepositoryID": {
-					"type": "ZGuid",
-					"value": "00000000-0000-0000-0000-000000000000"
-				}
-			},
-			"events": {
-				"Loaded": { "Spawn": ["ff28c16eb9073f6e"] },
-				"Removed": { "Remove": ["ff28c16eb9073f6e"] }
-			},
-			"propertyAliases": {
-				"GearWall": [
-					{
-						"originalProperty": "m_rValueEntity",
-						"originalEntity": "0d542ebc2d9aa18d"
-					}
-				],
-				"Owned": [
-					{
-						"originalProperty": "m_rValueEntity",
-						"originalEntity": "defd1e2c3c98b632"
-					}
-				],
-				"RepositoryID": [
-					{
-						"originalProperty": "m_RepositoryId",
-						"originalEntity": "acce7665084a7786"
-					}
-				]
-			}
-		},
-		"3e575336edfb2753": {
-			"parent": "8375a8be32ea9189",
-			"name": "Get if gear wall and placed",
-			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_rValueEntity": {
-					"type": "SEntityTemplateReference",
-					"value": "13c9381ee813044d"
-				}
-			},
-			"events": { "PollTrue": { "Poll": ["5c05ade31655c163"] } }
-		},
 		"184155c496ae7cb3": {
 			"parent": "ff28c16eb9073f6e",
 			"name": "Is gear wall",
@@ -2162,27 +1761,6 @@
 			"events": {
 				"PollTrue": { "PickupIntoHands": ["05a47eed8ac146cc"] },
 				"PollFalse": { "PickupIntoPocket": ["05a47eed8ac146cc"] }
-			}
-		},
-		"60bb72285e5d804a": {
-			"parent": "dbbbed4658c2b0ae",
-			"name": "Spawn if gear wall",
-			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_rValueEntity": {
-					"type": "SEntityTemplateReference",
-					"value": "13c9381ee813044d"
-				}
-			},
-			"events": {
-				"PollTrue": {
-					"GetValue": ["f14dd3b63c70bb68"],
-					"SetTrue": ["2413f98d4a1f4ac3"]
-				}
-			},
-			"outputCopying": {
-				"PollTrue": { "Loaded": ["dbbbed4658c2b0ae"] }
 			}
 		},
 		"2d797fb331d20691": {
@@ -2342,12 +1920,6 @@
 				}
 			}
 		},
-		"605ea497ffaa6632": {
-			"parent": "8375a8be32ea9189",
-			"name": "EventToken_Evergreen_Gear_GetSafehouseItems",
-			"factory": "[assembly:/_pro/design/gamecore/events/eventtokens_evergreen.template?/eventtoken_evergreen_gear_getsafehouseitems.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/gamecore/events/eventtokens_evergreen.template?/eventtoken_evergreen_gear_getsafehouseitems.entitytemplate].pc_entityblueprint"
-		},
 		"2f60228355429181": {
 			"parent": "76bc7debe63916b6",
 			"name": "Locked by challenge headline",
@@ -2396,30 +1968,6 @@
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
 					"value": "6bc51f027c661f6a"
-				}
-			}
-		},
-		"c1e74dbc865f13b1": {
-			"parent": "dbbbed4658c2b0ae",
-			"name": "Item awarded",
-			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint"
-		},
-		"0a4daaf0a06c9a0d": {
-			"parent": "dbbbed4658c2b0ae",
-			"name": "Previously awarded",
-			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_rValueEntity": {
-					"type": "SEntityTemplateReference",
-					"value": "c1e74dbc865f13b1"
-				}
-			},
-			"events": {
-				"PollFalse": {
-					"Poll": ["60bb72285e5d804a"],
-					"SetTrue": ["6324686f52352376"]
 				}
 			}
 		},
@@ -2572,19 +2120,6 @@
 				}
 			}
 		},
-		"e2bf43e87b2f5573": {
-			"parent": "dbbbed4658c2b0ae",
-			"name": "Intro cut start",
-			"factory": "[modules:/zgameeventlistenerentity.class].pc_entitytype",
-			"blueprint": "[modules:/zgameeventlistenerentity.class].pc_entityblueprint",
-			"properties": {
-				"m_eEvent": {
-					"type": "EGameEventType",
-					"value": "GET_IntroCutStart"
-				}
-			},
-			"events": { "EventOccurred": { "In": ["9e2de6bd7af4ac9e"] } }
-		},
 		"3b37d1919591c758": {
 			"parent": "76bc7debe63916b6",
 			"name": "Gear wall and placed",
@@ -2617,59 +2152,6 @@
 			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entityblueprint",
 			"properties": { "m_bValue": { "type": "bool", "value": true } }
-		},
-		"5c05ade31655c163": {
-			"parent": "8375a8be32ea9189",
-			"name": "Get if placed",
-			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_rValueEntity": {
-					"type": "SEntityTemplateReference",
-					"value": "15fbf45986917512"
-				}
-			},
-			"events": { "PollTrue": { "GetValue": ["d65b673dab3fcf6f"] } }
-		},
-		"8375a8be32ea9189": {
-			"parent": "b0906e8ecb81a1b0",
-			"name": "Item getter",
-			"factory": "[modules:/zentity.class].pc_entitytype",
-			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
-			"properties": {
-				"Placed": {
-					"type": "SEntityTemplateReference",
-					"value": "15fbf45986917512"
-				},
-				"GearWall": {
-					"type": "SEntityTemplateReference",
-					"value": "13c9381ee813044d"
-				},
-				"RepositoryID": {
-					"type": "ZGuid",
-					"value": "00000000-0000-0000-0000-000000000000"
-				}
-			},
-			"propertyAliases": {
-				"GearWall": [
-					{
-						"originalProperty": "m_rValueEntity",
-						"originalEntity": "3e575336edfb2753"
-					}
-				],
-				"Placed": [
-					{
-						"originalProperty": "m_rValueEntity",
-						"originalEntity": "5c05ade31655c163"
-					}
-				],
-				"RepositoryID": [
-					{
-						"originalProperty": "m_value",
-						"originalEntity": "d65b673dab3fcf6f"
-					}
-				]
-			}
 		},
 		"403525c6f0aaf4ec": {
 			"parent": "0cd5d1c19b606cb9",
@@ -3041,7 +2523,7 @@
 					"SetTrue": ["53700dc743a23b73"],
 					"TransmitEvent": ["d4f75b1aef0680fd"]
 				},
-				"ItemSpawned": { "SetContainerItem": ["cafece2124cc2ce3"] }
+				"ItemSpawned": { "SetOverride": ["b60030115d87d91c"] }
 			}
 		},
 		"b8748ea1a5a9f1d9": {
@@ -3199,14 +2681,6 @@
 				}
 			}
 		},
-		"3692b6ada59b100e": {
-			"parent": "dbbbed4658c2b0ae",
-			"name": "Unlocked by default",
-			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
-			"properties": {},
-			"events": { "PollFalse": { "Poll": ["38becd94dc3556d8"] } }
-		},
 		"5dfdfc6130ca8ae2": {
 			"parent": "ff28c16eb9073f6e",
 			"name": "Detonator actions",
@@ -3227,22 +2701,6 @@
 			"events": {
 				"Item": { "SetItem": ["1b787050d609dde2"] },
 				"Done": { "Reset": ["d96d7c70999f2f8c"] }
-			}
-		},
-		"bc7f22b3fd787d45": {
-			"parent": "befbb178b8571b44",
-			"name": "Spawn item on match if gear wall 2",
-			"factory": "[modules:/zrepositorykeycomparatorentity.class].pc_entitytype",
-			"blueprint": "[modules:/zrepositorykeycomparatorentity.class].pc_entityblueprint",
-			"properties": {
-				"m_RepositoryKey": {
-					"type": "SEntityTemplateReference",
-					"value": "acce7665084a7786"
-				}
-			},
-			"events": { "OnTrue": { "SetFalse": ["defd1e2c3c98b632"] } },
-			"outputCopying": {
-				"OnTrue": { "Removed": ["befbb178b8571b44"] }
 			}
 		},
 		"b8d3aef5ac5ec51e": {
@@ -3475,167 +2933,13 @@
 			"parent": "ff28c16eb9073f6e",
 			"name": "zoverrideglowentity",
 			"factory": "[modules:/zoverrideglowentity.class].pc_entitytype",
-			"blueprint": "[modules:/zoverrideglowentity.class].pc_entityblueprint"
-		},
-		"31001ddbad2423f7": {
-			"parent": "dbbbed4658c2b0ae",
-			"name": "Spatial",
-			"factory": "[modules:/zspatialentity.class].pc_entitytype",
-			"blueprint": "[modules:/zspatialentity.class].pc_entityblueprint",
+			"blueprint": "[modules:/zoverrideglowentity.class].pc_entityblueprint",
 			"properties": {
-				"m_bVisible": { "type": "bool", "value": false },
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "b0906e8ecb81a1b0",
+				"m_GlowType": {
+					"type": "ERenderGlowTypes",
+					"value": "ERENDERGLOWTYPE_NONE",
 					"postInit": true
 				}
-			}
-		},
-		"9cd4d10906533e3a": {
-			"parent": "dbbbed4658c2b0ae",
-			"name": "SpatialIconHideDistance",
-			"factory": "[assembly:/templates/ui/controls/hudcontrols.template?/spatialiconhidedistance.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/templates/ui/controls/hudcontrols.template?/spatialiconhidedistance.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_pTextureRID": {
-					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "007B42611E3EF37F",
-						"flag": "9F"
-					}
-				},
-				"m_bIsVisible": { "type": "bool", "value": false },
-				"m_25DProjectionSettings": {
-					"type": "S25DProjectionSettings",
-					"value": {
-						"fNearDistance": 0.0,
-						"fFarDistance": 30.0,
-						"fNearScale": 100.0,
-						"fFarScale": 100.0,
-						"fNearFov": 40.0,
-						"fFarFov": 40.0,
-						"fNearScaleFov": 1.0,
-						"fFarScaleFov": 1.0,
-						"enableWorldSizeScaling": true,
-						"fWorldSizeScalingBaseDistance": 10.0,
-						"fWorldSizeScalingFactorMax": 2.0,
-						"fWorldSizeScalingFactorMin": 0.25,
-						"fScaleFactor": 1.5,
-						"fNearAlpha": 100.0,
-						"fFarAlpha": 100.0,
-						"fAlphaFactor": 1.0,
-						"aScaleCurve": [],
-						"aAlphaCurve": [
-							{ "fDistance": 6.0, "fValue": 100.0 },
-							{ "fDistance": 10.0, "fValue": 50.0 },
-							{ "fDistance": 25.0, "fValue": 50.0 },
-							{ "fDistance": 30.0, "fValue": 0.0 }
-						],
-						"eViewportLock": "VPL_None",
-						"fViewportGutter": 64.0,
-						"sWorldSpaceSettings": {
-							"fCloseupDistance": 0.75,
-							"fScale": 8.0,
-							"bDynamicScale": true,
-							"fDynamicScaleAlpha": 0.6000000238418579,
-							"fDynamicScaleNearDistance": 5.0,
-							"fDynamicScaleBlendRange": 2.0
-						}
-					}
-				},
-				"m_bShowOnTop": { "type": "bool", "value": true },
-				"ScaleX": { "type": "float32", "value": 0.25 },
-				"ScaleY": { "type": "float32", "value": 0.25 },
-				"m_pSpatial": {
-					"type": "SEntityTemplateReference",
-					"value": "31001ddbad2423f7"
-				}
-			}
-		},
-		"dbbbed4658c2b0ae": {
-			"parent": "b0906e8ecb81a1b0",
-			"name": "Item awarder",
-			"factory": "[modules:/zentity.class].pc_entitytype",
-			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
-			"properties": {
-				"Owned": {
-					"type": "SEntityTemplateReference",
-					"value": "64fbe690fc534c94"
-				},
-				"GearWall": {
-					"type": "SEntityTemplateReference",
-					"value": "13c9381ee813044d"
-				},
-				"Unlocked": {
-					"type": "SEntityTemplateReference",
-					"value": "e66e0ee9415772c0"
-				},
-				"RepositoryID": {
-					"type": "ZGuid",
-					"value": "00000000-0000-0000-0000-000000000000"
-				},
-				"IconTransformParent": {
-					"type": "SEntityTemplateReference",
-					"value": null
-				},
-				"Menu": {
-					"type": "SEntityTemplateReference",
-					"value": "dd218b2743991ca8",
-					"postInit": true
-				}
-			},
-			"events": { "Loaded": { "Spawn": ["ff28c16eb9073f6e"] } },
-			"propertyAliases": {
-				"GearWall": [
-					{
-						"originalProperty": "m_rValueEntity",
-						"originalEntity": "60bb72285e5d804a"
-					}
-				],
-				"IconTransformParent": [
-					{
-						"originalProperty": "m_eidParent",
-						"originalEntity": "31001ddbad2423f7"
-					}
-				],
-				"Menu": [
-					{
-						"originalProperty": "m_subject",
-						"originalEntity": "4635df3caa298838"
-					}
-				],
-				"Owned": [
-					{
-						"originalProperty": "m_rValueEntity",
-						"originalEntity": "6324686f52352376"
-					}
-				],
-				"RepositoryID": [
-					{
-						"originalProperty": "m_RepositoryId",
-						"originalEntity": "b4da20a580a21989"
-					},
-					{
-						"originalProperty": "m_value",
-						"originalEntity": "f14dd3b63c70bb68"
-					},
-					{
-						"originalProperty": "m_sRepositoryID",
-						"originalEntity": "31dfa048d4e9a173"
-					}
-				],
-				"Unlocked": [
-					{
-						"originalProperty": "m_rValueEntity",
-						"originalEntity": "38becd94dc3556d8"
-					}
-				],
-				"UnlockedByDefault": [
-					{
-						"originalProperty": "m_rValueEntity",
-						"originalEntity": "3692b6ada59b100e"
-					}
-				]
 			}
 		},
 		"6b040862422da3aa": {
@@ -4244,29 +3548,13 @@
 					},
 					{
 						"originalProperty": "RepositoryID",
-						"originalEntity": "befbb178b8571b44"
-					},
-					{
-						"originalProperty": "RepositoryID",
 						"originalEntity": "ff28c16eb9073f6e"
-					},
-					{
-						"originalProperty": "RepositoryID",
-						"originalEntity": "8375a8be32ea9189"
-					},
-					{
-						"originalProperty": "RepositoryID",
-						"originalEntity": "dbbbed4658c2b0ae"
 					}
 				],
 				"m_boundary": [
 					{
 						"originalProperty": "m_boundary",
 						"originalEntity": "dd218b2743991ca8"
-					},
-					{
-						"originalProperty": "IconTransformParent",
-						"originalEntity": "dbbbed4658c2b0ae"
 					}
 				]
 			},
@@ -4286,7 +3574,7 @@
 			}
 		},
 		"cafe53207f7b6e84": {
-			"parent": "cafece2124cc2ce3",
+			"parent": "cafe850f747da798",
 			"name": "KeepTheCaseIfItsNotEmpty",
 			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
@@ -4304,35 +3592,11 @@
 			}
 		},
 		"cafe850f747da798": {
-			"parent": "cafece2124cc2ce3",
+			"parent": "d38e68473fe3a9b7",
 			"name": "Empty",
 			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
 			"properties": { "m_bValue": { "type": "bool", "value": true } }
-		},
-		"cafece2124cc2ce3": {
-			"parent": "d38e68473fe3a9b7",
-			"name": "Briefcase container actions",
-			"factory": "[modules:/zherocontaineritemaction.class].pc_entitytype",
-			"blueprint": "[modules:/zherocontaineritemaction.class].pc_entityblueprint",
-			"events": {
-				"OnItemPlaced": { "SetTrue": [] },
-				"OnItemEquipped": { "SetFalse": [] }
-			}
-		},
-		"cafe621db4476757": {
-			"parent": "cafece2124cc2ce3",
-			"name": "IsItEmpty",
-			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_bFireOnLevelStart": { "type": "bool", "value": true },
-				"m_rValueEntity": {
-					"type": "SEntityTemplateReference",
-					"value": "cafe850f747da798",
-					"postInit": true
-				}
-			}
 		}
 	},
 	"propertyOverrides": [],
