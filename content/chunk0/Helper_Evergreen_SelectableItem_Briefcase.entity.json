@@ -2522,8 +2522,7 @@
 					"SetOverride": ["b60030115d87d91c"],
 					"SetTrue": ["53700dc743a23b73"],
 					"TransmitEvent": ["d4f75b1aef0680fd"]
-				},
-				"ItemSpawned": { "SetOverride": ["b60030115d87d91c"] }
+				}
 			}
 		},
 		"b8748ea1a5a9f1d9": {
@@ -3382,7 +3381,10 @@
 					"SetFalse": ["39ef86e367379cd2"],
 					"In": ["f319ecd8210df127"]
 				},
-				"Spawn": { "Poll": ["f0450648f901b99e"] },
+				"Spawn": {
+					"Poll": ["f0450648f901b99e"],
+					"SetOverride": ["b60030115d87d91c"]
+				},
 				"Remove": { "Poll": ["55d93608153f18d7"] }
 			},
 			"propertyAliases": {
@@ -3597,6 +3599,15 @@
 			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
 			"properties": { "m_bValue": { "type": "bool", "value": true } }
+		},
+		"cafe1f9e5d0a7253": {
+			"parent": "b0906e8ecb81a1b0",
+			"name": "GameEventListener",
+			"factory": "[modules:/zgameeventlistenerentity.class].pc_entitytype",
+			"blueprint": "[modules:/zgameeventlistenerentity.class].pc_entityblueprint",
+			"events": {
+				"EventOccurred": { "Spawn": ["ff28c16eb9073f6e"] }
+			}
 		}
 	},
 	"propertyOverrides": [],

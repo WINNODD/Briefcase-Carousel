@@ -1,11 +1,12 @@
 {
     "id": "WINNODD.BrifecaseCarousel",
     "name": "Brifecase Carousel",
-    "description": "Your briefcase carousel is more than just a cosmetic! Spin it and pick your favorite briefcase for the mission!",
+    "updateCheck": "https://raw.githubusercontent.com/WINNODD/mod-update-checks/refs/heads/main/updater-briefcase-carousel.json",
+	"description": "Your briefcase carousel is more than just a cosmetic! Spin it and pick your favorite briefcase for the mission!",
     "authors": [
         "WINNODD"
     ],
-    "frameworkVersion": "2.0.0",
+    "frameworkVersion": "2.33.26",
     "version": "1.0.0",
     "contentFolders": [
         "content"

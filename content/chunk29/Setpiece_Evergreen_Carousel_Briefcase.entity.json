@@ -2269,7 +2269,7 @@
 		},
 		"cafe3aa918548b5f": {
 			"parent": "0cb8c2f58bb6104c",
-			"name": "LightingLogic",
+			"name": "InspectLight",
 			"factory": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
 		},
@@ -3605,7 +3605,8 @@
 						"cafec497d984e752",
 						"cafe3804d3797a45",
 						"cafe0e47a7358366",
-						"cafe58c423d5ddc1"
+						"cafe58c423d5ddc1",
+						"cafe33c537330a0e"
 					]
 				}
 			}
@@ -3630,7 +3631,13 @@
 				}
 			},
 			"events": {
-				"Value": { "T": ["cafe50efca220bcd", "cafefd0dcd13eac6"] }
+				"Value": {
+					"T": [
+						"cafe50efca220bcd",
+						"cafefd0dcd13eac6",
+						"cafe96b34497002c"
+					]
+				}
 			}
 		},
 		"cafe139d42dc0d1a": {
@@ -3653,7 +3660,13 @@
 				}
 			},
 			"events": {
-				"Value": { "T": ["cafe672f981a1f96", "cafefeef6e330b5b"] }
+				"Value": {
+					"T": [
+						"cafe672f981a1f96",
+						"cafefeef6e330b5b",
+						"cafef9881803fc92"
+					]
+				}
 			}
 		},
 		"cafe672f981a1f96": {
@@ -3672,7 +3685,8 @@
 						"cafec497d984e752",
 						"cafe3804d3797a45",
 						"cafe0e47a7358366",
-						"cafe58c423d5ddc1"
+						"cafe58c423d5ddc1",
+						"cafe33c537330a0e"
 					]
 				}
 			}
@@ -3692,7 +3706,7 @@
 				},
 				"ConstantVector1D_07_Value": {
 					"type": "float32",
-					"value": -100.0
+					"value": -20.0
 				},
 				"ConstantVector1D_07_Value_op": {
 					"type": "IRenderMaterialEntity.EModifierOperation",
@@ -3711,87 +3725,33 @@
 		},
 		"cafefeef6e330b5b": {
 			"parent": "cafef0271a3f6e02",
-			"name": "Lerp ConstantVector1D_07_Value Off",
+			"name": "Lerp Lamp ConstantVector1D_07_Value Off",
 			"factory": "[modules:/zmathlerp.class].pc_entitytype",
 			"blueprint": "[modules:/zmathlerp.class].pc_entityblueprint",
 			"properties": {
-				"m_B": { "type": "float32", "value": 0.0 },
+				"m_B": { "type": "float32", "value": 100.0 },
 				"m_fT": { "type": "float32", "value": 0.0 },
-				"m_A": { "type": "float32", "value": 200.0 }
+				"m_A": { "type": "float32", "value": 300.0 }
 			},
 			"events": {
 				"Lerp": {
-					"ConstantVector1D_07_Value": [
-						"cafea7d9fb1bf494",
-						"cafea43923e87ffd"
-					]
+					"ConstantVector1D_07_Value": ["cafe19cc5658e8ee"]
 				}
 			}
 		},
 		"cafefd0dcd13eac6": {
 			"parent": "cafef0271a3f6e02",
-			"name": "Lerp ConstantVector1D_07_Value On",
+			"name": "Lerp Lamp ConstantVector1D_07_Value On",
 			"factory": "[modules:/zmathlerp.class].pc_entitytype",
 			"blueprint": "[modules:/zmathlerp.class].pc_entityblueprint",
 			"properties": {
-				"m_B": { "type": "float32", "value": 0.0 },
+				"m_B": { "type": "float32", "value": 100.0 },
 				"m_fT": { "type": "float32", "value": 0.0 },
-				"m_A": { "type": "float32", "value": -200.0 }
+				"m_A": { "type": "float32", "value": -100.0 }
 			},
 			"events": {
 				"Lerp": {
-					"ConstantVector1D_07_Value": [
-						"cafea7d9fb1bf494",
-						"cafea43923e87ffd"
-					]
-				}
-			}
-		},
-		"cafea43923e87ffd": {
-			"parent": "cafef0271a3f6e02",
-			"name": "lamp_spot_light_a",
-			"factory": "[assembly:/_pro/environment/materials/props/lamps/lamp_spot_light_a.mi].pc_entitytype",
-			"blueprint": "[assembly:/_pro/environment/materials/props/lamps/lamp_spot_light_a.mi].pc_entityblueprint",
-			"properties": {
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": { "x": -0.0, "y": 0.0, "z": -0.0 },
-						"position": { "x": 0.0, "y": 0.0, "z": 0.0 }
-					}
-				},
-				"ConstantVector1D_07_Value_op": {
-					"type": "IRenderMaterialEntity.EModifierOperation",
-					"value": "eReplace"
-				},
-				"ConstantColorRGB_01_Value_op": {
-					"type": "IRenderMaterialEntity.EModifierOperation",
-					"value": "eReplace"
-				},
-				"ConstantVector1D_07_Value": {
-					"type": "float32",
-					"value": 0.0
-				},
-				"ConstantColorRGB_01_Value": {
-					"type": "SColorRGB",
-					"value": "#90ccd4"
-				},
-				"Clients": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": [
-						"cafe68a89c29d925",
-						"cafe642244ddfe2a",
-						"cafe67650b0e9639",
-						"cafe6adec838c898",
-						"cafe236178dc9574",
-						"cafefbd0a34b9bce"
-					],
-					"postInit": true
-				},
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "cafef0271a3f6e02",
-					"postInit": true
+					"ConstantVector1D_07_Value": ["cafe19cc5658e8ee"]
 				}
 			}
 		},
@@ -4006,6 +3966,100 @@
 					"value": "#90ccd4"
 				},
 				"m_fDiffusePower": { "type": "float32", "value": 0.0 },
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe20dc691f2106",
+					"postInit": true
+				}
+			}
+		},
+		"cafef9881803fc92": {
+			"parent": "cafef0271a3f6e02",
+			"name": "Lerp Bar ConstantVector1D_07_Value Off",
+			"factory": "[modules:/zmathlerp.class].pc_entitytype",
+			"blueprint": "[modules:/zmathlerp.class].pc_entityblueprint",
+			"properties": {
+				"m_B": { "type": "float32", "value": 40.0 },
+				"m_fT": { "type": "float32", "value": 0.0 },
+				"m_A": { "type": "float32", "value": 160.0 }
+			},
+			"events": {
+				"Lerp": {
+					"ConstantVector1D_07_Value": ["cafea7d9fb1bf494"]
+				}
+			}
+		},
+		"cafe96b34497002c": {
+			"parent": "cafef0271a3f6e02",
+			"name": "Lerp Bar ConstantVector1D_07_Value On",
+			"factory": "[modules:/zmathlerp.class].pc_entitytype",
+			"blueprint": "[modules:/zmathlerp.class].pc_entityblueprint",
+			"properties": {
+				"m_B": { "type": "float32", "value": 40.0 },
+				"m_fT": { "type": "float32", "value": 0.0 },
+				"m_A": { "type": "float32", "value": -80.0 }
+			},
+			"events": {
+				"Lerp": {
+					"ConstantVector1D_07_Value": ["cafea7d9fb1bf494"]
+				}
+			}
+		},
+		"cafe33c537330a0e": {
+			"parent": "cafef0271a3f6e02",
+			"name": "Light center",
+			"factory": "[modules:/zlightentity.class].pc_entitytype",
+			"blueprint": "[modules:/zlightentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": 45.0, "y": 45.0, "z": -0.0 },
+						"position": { "x": -0.0, "y": 0.0, "z": 3.2 }
+					}
+				},
+				"m_diffuseColor": {
+					"type": "SColorRGB",
+					"value": "#90ccd4"
+				},
+				"m_fDiffusePower": { "type": "float32", "value": 0.0 },
+				"m_vAngularAttenuation": {
+					"type": "SVector2",
+					"value": {
+						"x": 0.7817729711532593,
+						"y": 0.9845430254936218
+					}
+				},
+				"m_vFarAttenuation": {
+					"type": "SVector2",
+					"value": {
+						"x": 2.346709966659546,
+						"y": 6.5893402099609375
+					}
+				},
+				"m_bVisible": { "type": "bool", "value": true },
+				"m_bForceVisible": { "type": "bool", "value": false },
+				"m_eLightType": {
+					"type": "ILightEntity.ELightType",
+					"value": "LT_SPOT"
+				},
+				"m_fAspectXByY": {
+					"type": "float32",
+					"value": 0.10000000149011612
+				},
+				"m_vNearAttenuation": {
+					"type": "SVector2",
+					"value": {
+						"x": 1.4545799493789673,
+						"y": 1.5720399618148804
+					}
+				},
+				"m_bCastShadows": { "type": "bool", "value": false },
+				"m_fLightFadeDistance": {
+					"type": "float32",
+					"value": 20.0
+				},
+				"m_bEnableLightFade": { "type": "bool", "value": false },
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
 					"value": "cafe20dc691f2106",
