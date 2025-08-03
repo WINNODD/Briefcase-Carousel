@@ -1,0 +1,21 @@
+{
+    "id": "WINNODD.BrifecaseCarousel",
+    "name": "Brifecase Carousel",
+    "description": "Your briefcase carousel is more than just a cosmetic! Spin it and pick your favorite briefcase for the mission!",
+    "authors": [
+        "WINNODD"
+    ],
+    "frameworkVersion": "2.0.0",
+    "version": "1.0.0",
+    "contentFolders": [
+        "content"
+    ],
+	"dependencies": [
+		{
+			"comment": "hokkaido_restaurant_bar_light_a",
+			"runtimeID": "003A184E5FEE6EAE",
+			"toChunk": 1,
+			"portFromChunk1": false
+		}
+	]
+}
