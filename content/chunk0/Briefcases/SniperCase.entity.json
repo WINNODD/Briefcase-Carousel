@@ -180,7 +180,7 @@
 			"properties": {
 				"m_sName": {
 					"type": "ZString",
-					"value": "BriefcaseIsEmpty"
+					"value": "BriefcaseIsEmptyWide"
 				}
 			}
 		}

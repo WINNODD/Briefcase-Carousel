@@ -150,6 +150,35 @@
 				"ZEventReceiverEntity_void": "6885e92ffce55a4d",
 				"ZEvergreenMenuEntryEntity": "6885e92ffce55a4d"
 			}
+		},
+		"cafe835b33de1224": {
+			"parent": "6885e92ffce55a4d",
+			"name": "EventChannelReceiver_bool",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_bool.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_bool.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafed60f3b40f349",
+					"postInit": true
+				}
+			},
+			"events": {
+				"OnTrue": { "SetEmpty": ["6885e92ffce55a4d"] },
+				"OnFalse": { "SetFilled": ["6885e92ffce55a4d"] }
+			}
+		},
+		"cafed60f3b40f349": {
+			"parent": "cafe835b33de1224",
+			"name": "Token_ID_BriefcaseIsEmpty",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "BriefcaseIsEmptyTravel1"
+				}
+			}
 		}
 	},
 	"propertyOverrides": [],

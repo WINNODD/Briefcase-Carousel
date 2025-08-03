@@ -1,0 +1,90 @@
+{
+	"tempHash": "00ACCC4FACA27B97",
+	"tbluHash": "008D5E02BDAFB71F",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"fafe10e3a394cfe2",
+				{
+					"AddEventConnection": [
+						"ItemUsed",
+						"SetFalse",
+						"cafefd0e8fa66aea"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"f092bc411a4ce601",
+				{
+					"AddEventConnection": [
+						"Started",
+						"SetTrue",
+						"cafefd0e8fa66aea"
+					]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7f4d95932214",
+				{
+					"parent": "7ad3ed4b84b88d45",
+					"name": "EventChannelTransmitter_bool",
+					"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_bool.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_bool.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rChannelToken": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe512bbd531356",
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe512bbd531356",
+				{
+					"parent": "cafe7f4d95932214",
+					"name": "Token_ID_BriefcaseIsEmpty",
+					"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+					"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sName": {
+							"type": "ZString",
+							"value": "BriefcaseIsEmptyGold"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafefd0e8fa66aea",
+				{
+					"parent": "cafe7f4d95932214",
+					"name": "Empty",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bValue": { "type": "bool", "value": true },
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						}
+					},
+					"events": {
+						"OnTrue": { "TransmitTrue": ["cafe7f4d95932214"] },
+						"OnFalse": {
+							"TransmitFalse": ["cafe7f4d95932214"]
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

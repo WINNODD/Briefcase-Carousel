@@ -1,13 +1,7 @@
 {
-	"tempHash": "00223406A394044C",
-	"tbluHash": "00E58A06F2AEDD77",
+	"tempHash": "00D4620C198E1986",
+	"tbluHash": "00CA6A84EB3DBF19",
 	"patch": [
-		{
-			"SubEntityOperation": [
-				"3b82f695ca061175",
-				{ "RemovePropertyByName": "m_aHolders" }
-			]
-		},
 		{
 			"SubEntityOperation": [
 				"fafe10e3a394cfe2",
@@ -15,7 +9,7 @@
 					"AddEventConnection": [
 						"ItemUsed",
 						"SetFalse",
-						"cafea85677b9fdcb"
+						"cafe7fc508f20fa6"
 					]
 				}
 			]
@@ -27,14 +21,14 @@
 					"AddEventConnection": [
 						"Started",
 						"SetTrue",
-						"cafea85677b9fdcb"
+						"cafe7fc508f20fa6"
 					]
 				}
 			]
 		},
 		{
 			"AddEntity": [
-				"cafe5fcf4e3e0728",
+				"cafe927d51d18674",
 				{
 					"parent": "7ad3ed4b84b88d45",
 					"name": "EventChannelTransmitter_bool",
@@ -43,7 +37,7 @@
 					"properties": {
 						"m_rChannelToken": {
 							"type": "SEntityTemplateReference",
-							"value": "cafe8a0cd6ce1e97",
+							"value": "cafe4ea763ff48f5",
 							"postInit": true
 						}
 					}
@@ -52,16 +46,16 @@
 		},
 		{
 			"AddEntity": [
-				"cafe8a0cd6ce1e97",
+				"cafe4ea763ff48f5",
 				{
-					"parent": "cafe5fcf4e3e0728",
+					"parent": "cafe927d51d18674",
 					"name": "Token_ID_BriefcaseIsEmpty",
 					"factory": "[modules:/ztokenidentity.class].pc_entitytype",
 					"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
 					"properties": {
 						"m_sName": {
 							"type": "ZString",
-							"value": "BriefcaseIsEmpty"
+							"value": "BriefcaseIsEmptyBirth"
 						}
 					}
 				}
@@ -69,9 +63,9 @@
 		},
 		{
 			"AddEntity": [
-				"cafea85677b9fdcb",
+				"cafe7fc508f20fa6",
 				{
-					"parent": "cafe5fcf4e3e0728",
+					"parent": "cafe927d51d18674",
 					"name": "Empty",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
@@ -83,9 +77,9 @@
 						}
 					},
 					"events": {
-						"OnTrue": { "TransmitTrue": ["cafe5fcf4e3e0728"] },
+						"OnTrue": { "TransmitTrue": ["cafe927d51d18674"] },
 						"OnFalse": {
-							"TransmitFalse": ["cafe5fcf4e3e0728"]
+							"TransmitFalse": ["cafe927d51d18674"]
 						}
 					}
 				}

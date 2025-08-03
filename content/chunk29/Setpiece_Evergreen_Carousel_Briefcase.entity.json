@@ -282,7 +282,7 @@
 				},
 				"m_PrimitiveScale": {
 					"type": "SVector3",
-					"value": { "x": 0.82, "y": 0.82, "z": 1.1 }
+					"value": { "x": 0.82, "y": 0.82, "z": 1.2 }
 				},
 				"m_eRoomBehaviour": {
 					"type": "ZSpatialEntity.ERoomBehaviour",
@@ -1605,10 +1605,7 @@
 				}
 			},
 			"events": {
-				"PollTrue": {
-					"DEBUG_ExitSafeZone": ["cafe0283c661c235"],
-					"BlendOut": ["cafe6c38368bacc4"]
-				}
+				"PollTrue": { "DEBUG_ExitSafeZone": ["cafe0283c661c235"] }
 			}
 		},
 		"cafeb1c01b9d7be2": {
@@ -1664,11 +1661,7 @@
 					"SetTrue": ["cafe4640bb891b59"],
 					"Poll": ["cafefdf987c8509f"]
 				},
-				"OnOpening": {
-					"SetFalse": ["cafe4640bb891b59"],
-					"BlendOut": ["cafe6c38368bacc4"]
-				},
-				"OnClosing": { "BlendIn": ["cafe6c38368bacc4"] }
+				"OnOpening": { "SetFalse": ["cafe4640bb891b59"] }
 			}
 		},
 		"cafe252d5917a0d3": {
@@ -1722,10 +1715,7 @@
 				"m_curve": {
 					"type": "ZCurve",
 					"value": {
-						"data": [
-							[0.0, 0.4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.4],
-							[1.0, 2.7, 0.0, 0.0, 0.0, 0.0, 0.0, 2.7]
-						]
+						"data": [[0.0, 1.8, 0.0, 0.0, 0.0, 0.0, 0.0, 1.8]]
 					}
 				},
 				"m_fMouseRange": {
@@ -1744,7 +1734,7 @@
 					"type": "SEntityTemplateReference",
 					"value": "cafe372a99380aaa"
 				},
-				"m_fDefaultHeight": { "type": "float32", "value": 1.55 },
+				"m_fDefaultHeight": { "type": "float32", "value": 1.8 },
 				"m_reference": {
 					"type": "SEntityTemplateReference",
 					"value": "cafe5508400c1eaf",
@@ -1867,7 +1857,7 @@
 					"type": "bool",
 					"value": true
 				},
-				"m_fFOV": { "type": "float32", "value": 45.0 },
+				"m_fFOV": { "type": "float32", "value": 50.0 },
 				"m_fPitchAngle": { "type": "float32", "value": 0.0 },
 				"m_fPitchMaxOffset": { "type": "float32", "value": 0.0 },
 				"m_fPitchMinOffset": { "type": "float32", "value": 0.0 },
@@ -1889,10 +1879,7 @@
 				"m_curve": {
 					"type": "ZCurve",
 					"value": {
-						"data": [
-							[0.0, 0.4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.4],
-							[1.0, 2.7, 0.0, 0.0, 0.0, 0.0, 0.0, 2.7]
-						]
+						"data": [[0.0, 1.8, 0.0, 0.0, 0.0, 0.0, 0.0, 1.8]]
 					}
 				},
 				"m_fMouseRange": {
@@ -1911,7 +1898,7 @@
 					"type": "SEntityTemplateReference",
 					"value": "cafedf0d4284d1c1"
 				},
-				"m_fDefaultHeight": { "type": "float32", "value": 1.55 },
+				"m_fDefaultHeight": { "type": "float32", "value": 1.8 },
 				"m_reference": {
 					"type": "SEntityTemplateReference",
 					"value": "cafe5508400c1eaf",
@@ -1929,10 +1916,7 @@
 				"m_curve": {
 					"type": "ZCurve",
 					"value": {
-						"data": [
-							[0.0, 0.4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.4],
-							[1.0, 2.7, 0.0, 0.0, 0.0, 0.0, 0.0, 2.7]
-						]
+						"data": [[0.0, 1.8, 0.0, 0.0, 0.0, 0.0, 0.0, 1.8]]
 					}
 				},
 				"m_fMouseRange": {
@@ -1951,7 +1935,7 @@
 					"type": "SEntityTemplateReference",
 					"value": "cafe790f13c76342"
 				},
-				"m_fDefaultHeight": { "type": "float32", "value": 1.55 },
+				"m_fDefaultHeight": { "type": "float32", "value": 1.8 },
 				"m_reference": {
 					"type": "SEntityTemplateReference",
 					"value": "cafe5508400c1eaf",
@@ -1969,10 +1953,7 @@
 				"m_curve": {
 					"type": "ZCurve",
 					"value": {
-						"data": [
-							[0.0, 0.4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.4],
-							[1.0, 2.7, 0.0, 0.0, 0.0, 0.0, 0.0, 2.7]
-						]
+						"data": [[0.0, 1.8, 0.0, 0.0, 0.0, 0.0, 0.0, 1.8]]
 					}
 				},
 				"m_fMouseRange": {
@@ -1991,7 +1972,7 @@
 					"type": "SEntityTemplateReference",
 					"value": "cafe68f63ba2d405"
 				},
-				"m_fDefaultHeight": { "type": "float32", "value": 1.55 },
+				"m_fDefaultHeight": { "type": "float32", "value": 1.8 },
 				"m_reference": {
 					"type": "SEntityTemplateReference",
 					"value": "cafe5508400c1eaf",
@@ -2431,11 +2412,7 @@
 					"SetTrue": ["cafe4640bb891b59"],
 					"Poll": ["cafefdf987c8509f"]
 				},
-				"OnOpening": {
-					"SetFalse": ["cafe4640bb891b59"],
-					"BlendOut": ["cafe6c38368bacc4"]
-				},
-				"OnClosing": { "BlendIn": ["cafe6c38368bacc4"] }
+				"OnOpening": { "SetFalse": ["cafe4640bb891b59"] }
 			}
 		},
 		"cafe0b9adf8652bb": {
@@ -2521,11 +2498,7 @@
 					"SetTrue": ["cafe4640bb891b59"],
 					"Poll": ["cafefdf987c8509f"]
 				},
-				"OnOpening": {
-					"SetFalse": ["cafe4640bb891b59"],
-					"BlendOut": ["cafe6c38368bacc4"]
-				},
-				"OnClosing": { "BlendIn": ["cafe6c38368bacc4"] }
+				"OnOpening": { "SetFalse": ["cafe4640bb891b59"] }
 			}
 		},
 		"cafe2d4e511c7105": {
@@ -2611,11 +2584,7 @@
 					"SetTrue": ["cafe4640bb891b59"],
 					"Poll": ["cafefdf987c8509f"]
 				},
-				"OnOpening": {
-					"SetFalse": ["cafe4640bb891b59"],
-					"BlendOut": ["cafe6c38368bacc4"]
-				},
-				"OnClosing": { "BlendIn": ["cafe6c38368bacc4"] }
+				"OnOpening": { "SetFalse": ["cafe4640bb891b59"] }
 			}
 		},
 		"cafe72e062c97e9d": {
@@ -3331,20 +3300,16 @@
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
 		"cafe3804d3797a45": {
-			"parent": "cafe23a1e7217497",
-			"name": "BarLightRight",
+			"parent": "cafea7d9fb1bf494",
+			"name": "Light 1",
 			"factory": "[modules:/zlightentity.class].pc_entitytype",
 			"blueprint": "[modules:/zlightentity.class].pc_entityblueprint",
 			"properties": {
 				"m_mTransform": {
 					"type": "SMatrix43",
 					"value": {
-						"rotation": { "x": 90.0, "y": 0.0, "z": -90.0 },
-						"position": {
-							"x": 0.11942630261182784,
-							"y": -0.005705981981009245,
-							"z": 0.26381680369377136
-						}
+						"rotation": { "x": 0.0, "y": 0.0, "z": 0.0 },
+						"position": { "x": 0.0, "y": 0.5, "z": 1.8 }
 					}
 				},
 				"m_eLightType": {
@@ -3380,7 +3345,7 @@
 				"m_fDiffusePower": { "type": "float32", "value": 0.0 },
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
-					"value": "cafe23a1e7217497",
+					"value": "cafe20dc691f2106",
 					"postInit": true
 				}
 			}
@@ -3409,20 +3374,16 @@
 			}
 		},
 		"cafec497d984e752": {
-			"parent": "cafe56e754492519",
-			"name": "BarLightLeft",
+			"parent": "cafea7d9fb1bf494",
+			"name": "Light 3",
 			"factory": "[modules:/zlightentity.class].pc_entitytype",
 			"blueprint": "[modules:/zlightentity.class].pc_entityblueprint",
 			"properties": {
 				"m_mTransform": {
 					"type": "SMatrix43",
 					"value": {
-						"rotation": { "x": 90.0, "y": 0.0, "z": -90.0 },
-						"position": {
-							"x": 0.11942630261182784,
-							"y": -0.005705981981009245,
-							"z": 0.26381680369377136
-						}
+						"rotation": { "x": 0.0, "y": 0.0, "z": 0.0 },
+						"position": { "x": 0.0, "y": -0.5, "z": 1.8 }
 					}
 				},
 				"m_eLightType": {
@@ -3458,7 +3419,7 @@
 				"m_fDiffusePower": { "type": "float32", "value": 0.0 },
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
-					"value": "cafe56e754492519",
+					"value": "cafe20dc691f2106",
 					"postInit": true
 				}
 			}
@@ -3636,7 +3597,8 @@
 					"DiffusePower": [
 						"cafec497d984e752",
 						"cafe3804d3797a45",
-						"cafe0e47a7358366"
+						"cafe0e47a7358366",
+						"cafe58c423d5ddc1"
 					]
 				}
 			}
@@ -3702,7 +3664,8 @@
 					"DiffusePower": [
 						"cafec497d984e752",
 						"cafe3804d3797a45",
-						"cafe0e47a7358366"
+						"cafe0e47a7358366",
+						"cafe58c423d5ddc1"
 					]
 				}
 			}
@@ -3826,8 +3789,8 @@
 			}
 		},
 		"cafe0e47a7358366": {
-			"parent": "cafeeae5220d4d14",
-			"name": "Light",
+			"parent": "cafea7d9fb1bf494",
+			"name": "Light 0",
 			"factory": "[modules:/zlightentity.class].pc_entitytype",
 			"blueprint": "[modules:/zlightentity.class].pc_entityblueprint",
 			"properties": {
@@ -3835,7 +3798,7 @@
 					"type": "SMatrix43",
 					"value": {
 						"rotation": { "x": 0.0, "y": 0.0, "z": 0.0 },
-						"position": { "x": 0.0, "y": 0.0, "z": 1.5 }
+						"position": { "x": -0.5, "y": 0.0, "z": 1.8 }
 					}
 				},
 				"m_eLightType": {
@@ -3868,33 +3831,9 @@
 				"m_fDiffusePower": { "type": "float32", "value": 0.0 },
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
-					"value": "cafeeae5220d4d14",
+					"value": "cafe20dc691f2106",
 					"postInit": true
 				}
-			}
-		},
-		"cafe6c38368bacc4": {
-			"parent": "cafe35771dd23f82",
-			"name": "HM5GameCamProfileNotInMenu",
-			"factory": "[modules:/zhm5gamecamprofileentity.class].pc_entitytype",
-			"blueprint": "[modules:/zhm5gamecamprofileentity.class].pc_entityblueprint",
-			"properties": {
-				"m_fRadius": { "type": "float32", "value": 0.0 },
-				"m_fRadiusLeft": { "type": "float32", "value": 0.0 },
-				"m_fYawOffset": { "type": "float32", "value": 0.0 },
-				"m_fBlendTime": { "type": "float32", "value": 0.7 },
-				"m_fProfileBlendTime": { "type": "float32", "value": 0.7 },
-				"m_bAlignYawPitch": { "type": "bool", "value": true },
-				"m_nPriority": { "type": "int32", "value": 100 },
-				"m_autoFitViewportByFOV": {
-					"type": "bool",
-					"value": true
-				},
-				"m_fFOV": { "type": "float32", "value": 45.0 },
-				"m_fPitchAngle": { "type": "float32", "value": 0.0 },
-				"m_fPitchMaxOffset": { "type": "float32", "value": 0.0 },
-				"m_fPitchMinOffset": { "type": "float32", "value": 0.0 },
-				"m_fStickLength": { "type": "float32", "value": 0.0 }
 			}
 		},
 		"cafe685b35036b92": {
@@ -4012,6 +3951,57 @@
 					"value": "cafe685b35036b92"
 				}
 			}
+		},
+		"cafe58c423d5ddc1": {
+			"parent": "cafea7d9fb1bf494",
+			"name": "Light 2",
+			"factory": "[modules:/zlightentity.class].pc_entitytype",
+			"blueprint": "[modules:/zlightentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": 0.0, "y": 0.0, "z": 0.0 },
+						"position": { "x": 0.5, "y": 0.0, "z": 1.8 }
+					}
+				},
+				"m_eLightType": {
+					"type": "ILightEntity.ELightType",
+					"value": "LT_CAPSULE"
+				},
+				"m_vFarAttenuation": {
+					"type": "SVector2",
+					"value": { "x": 0.20000000298023224, "y": 1.0 }
+				},
+				"m_vNearAttenuation": {
+					"type": "SVector2",
+					"value": {
+						"x": 0.07829579710960388,
+						"y": 0.08829580247402191
+					}
+				},
+				"m_vAngularAttenuation": {
+					"type": "SVector2",
+					"value": {
+						"x": 0.5781316757202148,
+						"y": 0.7853981852531433
+					}
+				},
+				"m_fCapsuleHeight": {
+					"type": "float32",
+					"value": 2.3625290393829346
+				},
+				"m_diffuseColor": {
+					"type": "SColorRGB",
+					"value": "#90ccd4"
+				},
+				"m_fDiffusePower": { "type": "float32", "value": 0.0 },
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe20dc691f2106",
+					"postInit": true
+				}
+			}
 		}
 	},
 	"propertyOverrides": [],
@@ -4035,6 +4025,11 @@
 			"parent": "cafedf0d4284d1c1",
 			"name": "Notes",
 			"text": "\"cafecf78a5d03a46\",\n\t\t\t\t\"cafed374308509ee\",\n\t\t\t\t\"cafeb6eff6d361b7\",\n\t\t\t\t\"cafecc9a47fa161f\",\n\t\t\t\t\"cafeca3dcb3a0244\",\n\t\t\t\t\"cafe661a152a0758\""
+		},
+		{
+			"parent": "cafe35771dd23f82",
+			"name": "Notes",
+			"text": "If only there's a way to save the last value zevergreenmenucounterscrollentity outputs and save it as the default height value for other menu. Those property aren't dynamic."
 		}
 	]
 }
