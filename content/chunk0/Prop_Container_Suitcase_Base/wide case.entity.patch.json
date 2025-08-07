@@ -4,12 +4,6 @@
 	"patch": [
 		{
 			"SubEntityOperation": [
-				"3b82f695ca061175",
-				{ "RemovePropertyByName": "m_aHolders" }
-			]
-		},
-		{
-			"SubEntityOperation": [
 				"1c422c35c9459985",
 				{
 					"AddEventConnection": [

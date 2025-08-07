@@ -7,13 +7,10 @@
         "WINNODD"
     ],
     "frameworkVersion": "2.33.26",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "contentFolders": [
         "content"
     ],
-	"thumbs": [
-		"ConsoleCmd OnlineResources_Disable 1"
-	],
 	"dependencies": [
 		{
 			"comment": "hokkaido_restaurant_bar_light_a",

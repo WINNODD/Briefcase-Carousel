@@ -198,6 +198,7 @@
 						"exposedEntity": "ItemKey"
 					}
 				},
+				"m_bCheckEquippedItem": { "type": "bool", "value": false },
 				"m_bCheckInventory": { "type": "bool", "value": true }
 			},
 			"outputCopying": {
