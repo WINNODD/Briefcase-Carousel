@@ -183,6 +183,26 @@
 					"value": "BriefcaseIsEmptyMK3"
 				}
 			}
+		},
+		"cafe89a25efdd98f": {
+			"parent": "7fa77e036d8562b9",
+			"name": "HeroItemCondition",
+			"factory": "[modules:/zheroitemcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zheroitemcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_ItemKeyToFind": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "6885e92ffce55a4d",
+						"externalScene": null,
+						"exposedEntity": "ItemKey"
+					}
+				},
+				"m_bCheckInventory": { "type": "bool", "value": true }
+			},
+			"outputCopying": {
+				"OnTrue": { "PickedUp": ["7fa77e036d8562b9"] }
+			}
 		}
 	},
 	"propertyOverrides": [],

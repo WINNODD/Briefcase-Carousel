@@ -977,7 +977,7 @@
 					"value": "00000000-0000-0000-0000-000000000000"
 				}
 			},
-			"events": { "OnMatch": { "Poll": ["cafe53207f7b6e84"] } }
+			"events": { "OnMatch": { "Poll": [] } }
 		},
 		"b2e2d181b9247f26": {
 			"parent": "ff28c16eb9073f6e",
@@ -1973,7 +1973,7 @@
 		},
 		"1323d8c6658ab193": {
 			"parent": "76bc7debe63916b6",
-			"name": "Gear wall and item not in inventory and case empty",
+			"name": "Gear wall and item not in inventory",
 			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -1984,7 +1984,7 @@
 						"48539d280ab8770e",
 						"4bfe9b98f1ced3d4",
 						"90eb6a73b8f2c078",
-						"cafe850f747da798"
+						"cafe51a5e87e6aab"
 					]
 				},
 				"m_bSignalsInEditMode": { "type": "bool", "value": true },
@@ -3568,6 +3568,10 @@
 				"Owned": {
 					"isArray": false,
 					"refersTo": ["64fbe690fc534c94"]
+				},
+				"ItemKey": {
+					"isArray": false,
+					"refersTo": ["6135c34b3c1c8f6f"]
 				}
 			},
 			"exposedInterfaces": {
@@ -3608,6 +3612,15 @@
 			"events": {
 				"EventOccurred": { "Spawn": ["ff28c16eb9073f6e"] }
 			}
+		},
+		"cafe51a5e87e6aab": {
+			"parent": "76bc7debe63916b6",
+			"name": "Always false",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
 		}
 	},
 	"propertyOverrides": [],
@@ -3626,5 +3639,11 @@
 		{ "resource": "00BF1D1B0722FB36", "flag": "5F" }
 	],
 	"extraBlueprintDependencies": [],
-	"comments": []
+	"comments": [
+		{
+			"parent": "d38e68473fe3a9b7",
+			"name": "Notes",
+			"text": "I've decide to never return any briefcase by dropping it. It just causes crashes."
+		}
+	]
 }

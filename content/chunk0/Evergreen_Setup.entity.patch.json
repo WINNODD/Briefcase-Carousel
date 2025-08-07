@@ -1,0 +1,1579 @@
+{
+	"tempHash": "006864DBF5FD7CD4",
+	"tbluHash": "00C681E41ADBD918",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"6d07147f642a3aeb",
+				{
+					"RemoveEventConnection": [
+						"OnFailed",
+						"Poll",
+						"3bdf33d9c1099d81"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"6d07147f642a3aeb",
+				{
+					"AddEventConnection": [
+						"OnFailed",
+						"Poll",
+						"cafe2cde84dc3581"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"d45f660c29c03252",
+				{
+					"AddEventConnection": [
+						"ItemSpawned",
+						"SetItem",
+						"cafed4734ea355e7"
+					]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe5fbfdf219180",
+				{
+					"parent": "cafe2cde84dc3581",
+					"name": "Keyword_ITEM_SUITCASE",
+					"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_suitcase.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_suitcase.entitytemplate].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafed4734ea355e7",
+				{
+					"parent": "cafe2cde84dc3581",
+					"name": "ItemKeywordProxy",
+					"factory": "[modules:/zitemkeywordproxyentity.class].pc_entitytype",
+					"blueprint": "[modules:/zitemkeywordproxyentity.class].pc_entityblueprint",
+					"events": {
+						"OnItemSet": { "Get": ["cafe6781578588f2"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe6781578588f2",
+				{
+					"parent": "cafe2cde84dc3581",
+					"name": "KeywordCondition CurrentItemIsBriefcase",
+					"factory": "[modules:/zkeywordcondition.class].pc_entitytype",
+					"blueprint": "[modules:/zkeywordcondition.class].pc_entityblueprint",
+					"properties": {
+						"m_rTarget": {
+							"type": "SEntityTemplateReference",
+							"value": "cafed4734ea355e7"
+						},
+						"m_bSubscribe": { "type": "bool", "value": true },
+						"m_eEvaluation": {
+							"type": "ZKeywordCondition.EEvaluationType",
+							"value": "ANY"
+						},
+						"m_rRequirements": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe5fbfdf219180",
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe2cde84dc3581",
+				{
+					"parent": "b69444f7693899ed",
+					"name": "Load briefcase item",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe6781578588f2"
+						}
+					},
+					"events": {
+						"PollFalse": { "Poll": ["3bdf33d9c1099d81"] },
+						"PollTrue": {
+							"GetNext": ["edcffb1b8d7c1847"],
+							"SetFalse": ["c20c9019dd64cf9c"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeeb8adf318ed0",
+				{
+					"parent": "b69444f7693899ed",
+					"name": "GameEventListener",
+					"factory": "[modules:/zgameeventlistenerentity.class].pc_entitytype",
+					"blueprint": "[modules:/zgameeventlistenerentity.class].pc_entityblueprint",
+					"events": {
+						"EventOccurred": { "Poll": ["cafe0c1a2bc33caf"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe2e0912851db5",
+				{
+					"parent": "cafe288899cb25b8",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "Sieger"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe288899cb25b8",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll Sieger",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe2e0912851db5"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafee78a13978b0c"]
+						},
+						"PollFalse": { "Poll": ["cafea570c91a45e3"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafee78a13978b0c",
+				{
+					"parent": "cafe288899cb25b8",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "4c2dfff7-9bb4-4cf0-b749-3916175912b8"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": ["6569e65842f294e0"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe2f5ecf039f2d",
+				{
+					"parent": "cafeecca8c12a860",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "Travel3"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeecca8c12a860",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll Travel3",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe2f5ecf039f2d"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafe1811caaacff0"]
+						},
+						"PollFalse": { "Poll": ["cafef4ea6c176115"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe1811caaacff0",
+				{
+					"parent": "cafeecca8c12a860",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "d299f56d-120a-4395-adb7-98310ee725d4"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": ["6569e65842f294e0"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeaebb59e89a46",
+				{
+					"parent": "cafe02dcebed417f",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "Chinese"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe02dcebed417f",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll Chinese",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafeaebb59e89a46"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafef3c755962fe6"]
+						},
+						"PollFalse": { "Poll": ["cafe3fb94e5da0a0"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafef3c755962fe6",
+				{
+					"parent": "cafe02dcebed417f",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "7ef0c49f-a5dc-421e-abe9-c94fe17ea0f9"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": ["6569e65842f294e0"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe4ecf935b0fe4",
+				{
+					"parent": "cafe289a86ebe8a9",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "Life"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe289a86ebe8a9",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll Life",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe4ecf935b0fe4"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafe1cb2ac3c3147"]
+						},
+						"PollFalse": { "Poll": ["cafe815a795b1978"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe1cb2ac3c3147",
+				{
+					"parent": "cafe289a86ebe8a9",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "411cfaca-502b-41e3-9a97-311f6644d5a1"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": ["6569e65842f294e0"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe6dbd365ccdad",
+				{
+					"parent": "cafe48e0bd0667b1",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "ICA"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe48e0bd0667b1",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll ICA",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe6dbd365ccdad"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafe573d98a94b75"]
+						},
+						"PollFalse": { "Poll": ["cafe166cad1249c6"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe573d98a94b75",
+				{
+					"parent": "cafe48e0bd0667b1",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "15e6200e-2000-4966-9771-923ab13c6a1c"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": ["6569e65842f294e0"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafed243d752e944",
+				{
+					"parent": "cafe45371a32fe7c",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "MK3"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe45371a32fe7c",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll MK3",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafed243d752e944"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafe383efdb4a801"]
+						},
+						"PollFalse": { "Poll": ["cafe288899cb25b8"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe383efdb4a801",
+				{
+					"parent": "cafe45371a32fe7c",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "d5d55894-a37a-4a39-b192-7c09b040c73e"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": ["6569e65842f294e0"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe47cd7f14b1d3",
+				{
+					"parent": "cafe0df113301a45",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "Birth"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe0df113301a45",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll Birth",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe47cd7f14b1d3"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafe5596a6c98704"]
+						},
+						"PollFalse": { "Poll": ["cafe02dcebed417f"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe5596a6c98704",
+				{
+					"parent": "cafe0df113301a45",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "6a86aea4-77db-4b54-a23a-bb90a398a157"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": ["6569e65842f294e0"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafead84972dfcdc",
+				{
+					"parent": "cafea570c91a45e3",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "Stadia"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafea570c91a45e3",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll Stadia",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafead84972dfcdc"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafeee497cf7c79d"]
+						},
+						"PollFalse": { "Poll": ["cafebdef0ebbb0ee"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeee497cf7c79d",
+				{
+					"parent": "cafea570c91a45e3",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "adf6a54d-eb23-44d1-94c4-34d3195e368a"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": ["6569e65842f294e0"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe92ab9878a0f3",
+				{
+					"parent": "cafe7e86b4979e75",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "Deluxe"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7e86b4979e75",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll Deluxe",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe92ab9878a0f3"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafe63d06f10fee9"]
+						},
+						"PollFalse": { "Poll": ["cafe8c2d284c8d99"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe63d06f10fee9",
+				{
+					"parent": "cafe7e86b4979e75",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "8cb03c05-feba-444a-9ef6-fcb918620e43"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": ["6569e65842f294e0"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeb56552de3c3e",
+				{
+					"parent": "cafe0c1a2bc33caf",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "Arctic"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe0c1a2bc33caf",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll Arctic",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafeb56552de3c3e"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafef21658d1846f"]
+						},
+						"PollFalse": { "Poll": ["cafe0df113301a45"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafef21658d1846f",
+				{
+					"parent": "cafe0c1a2bc33caf",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "1082607a-6bb0-49c9-ab77-e631f7a603f3"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": ["6569e65842f294e0"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafee1c6ffbf027e",
+				{
+					"parent": "cafe096e746af571",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "Hunt"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe096e746af571",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll Hunt",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafee1c6ffbf027e"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafe89e7107188a0"]
+						},
+						"PollFalse": { "Poll": ["cafe48e0bd0667b1"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe89e7107188a0",
+				{
+					"parent": "cafe096e746af571",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "7185b682-6c9d-4684-9b5d-d25c336f5cbd"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": ["6569e65842f294e0"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe89b9f6c3eec1",
+				{
+					"parent": "cafe0883ddbda1f3",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "MK2"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe0883ddbda1f3",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll MK2",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe89b9f6c3eec1"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafe2ec536b425c1"]
+						},
+						"PollFalse": { "Poll": ["cafe45371a32fe7c"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe2ec536b425c1",
+				{
+					"parent": "cafe0883ddbda1f3",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "8493fe56-8303-4285-94c1-06f96c604dba"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": ["6569e65842f294e0"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafea078daf41d84",
+				{
+					"parent": "cafe8c2d284c8d99",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "DJ"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe8c2d284c8d99",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll DJ",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafea078daf41d84"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafef178061582f9"]
+						},
+						"PollFalse": { "Poll": ["cafe16bf49e252f2"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafef178061582f9",
+				{
+					"parent": "cafe8c2d284c8d99",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "763217e5-8e47-4ae1-88a1-88f13b0f73eb"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": ["6569e65842f294e0"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe415f09f88f76",
+				{
+					"parent": "cafebdef0ebbb0ee",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "Tool"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafebdef0ebbb0ee",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll Tool",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe415f09f88f76"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafe822c612a4305"]
+						},
+						"PollFalse": { "Poll": ["cafed2b878c1d2c2"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe822c612a4305",
+				{
+					"parent": "cafebdef0ebbb0ee",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "d21f52a2-988b-4e97-8f47-9d1c6b341adc"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": ["6569e65842f294e0"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe10eee43695ba",
+				{
+					"parent": "cafe6bbce2e09d9d",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "Death"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe6bbce2e09d9d",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll Death",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe10eee43695ba"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafe4999e2b91a2b"]
+						},
+						"PollFalse": { "Poll": ["cafe7e86b4979e75"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe4999e2b91a2b",
+				{
+					"parent": "cafe6bbce2e09d9d",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "d27e9671-c2cb-4d32-b64f-c401140a4de2"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": ["6569e65842f294e0"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeec772b9f2841",
+				{
+					"parent": "cafe16bf49e252f2",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "Gold"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe16bf49e252f2",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll Gold",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafeec772b9f2841"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafedb55e8a7df7e"]
+						},
+						"PollFalse": { "Poll": ["cafe096e746af571"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafedb55e8a7df7e",
+				{
+					"parent": "cafe16bf49e252f2",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "d5f7e973-fbd8-477e-a34e-37985bedd831"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": ["6569e65842f294e0"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe14139b42718f",
+				{
+					"parent": "cafe166cad1249c6",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "Leather"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe166cad1249c6",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll Leather",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe14139b42718f"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafe18e998cd10b9"]
+						},
+						"PollFalse": { "Poll": ["cafe289a86ebe8a9"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe18e998cd10b9",
+				{
+					"parent": "cafe166cad1249c6",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "97152c6c-4410-45ab-9e27-50150ce05f9b"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": ["6569e65842f294e0"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe52e637cf7067",
+				{
+					"parent": "cafef962e351d7c3",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "Wide"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafef962e351d7c3",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll Wide",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe52e637cf7067"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafeca4bba577923"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeca4bba577923",
+				{
+					"parent": "cafef962e351d7c3",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "0673481e-48ed-4c4a-bd83-53b6724b79fb"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": ["6569e65842f294e0"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafef388d162c5ec",
+				{
+					"parent": "cafee9a0a6fb88d5",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "Travel2"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafee9a0a6fb88d5",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll Travel2",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafef388d162c5ec"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafe83d1ed8be569"]
+						},
+						"PollFalse": { "Poll": ["cafeecca8c12a860"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe83d1ed8be569",
+				{
+					"parent": "cafee9a0a6fb88d5",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "7b71cf70-ce68-4ad2-b29a-3b2b3bacf11c"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": ["6569e65842f294e0"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafecf236034d0a7",
+				{
+					"parent": "cafe815a795b1978",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "Military"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe815a795b1978",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll Military",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafecf236034d0a7"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafe999ca9e116dd"]
+						},
+						"PollFalse": { "Poll": ["cafe0883ddbda1f3"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe999ca9e116dd",
+				{
+					"parent": "cafe815a795b1978",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "83e194ed-a937-4680-8eb0-7a939bec1df8"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": ["6569e65842f294e0"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe6b893bb2c061",
+				{
+					"parent": "cafe3fb94e5da0a0",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "Classic"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe3fb94e5da0a0",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll Classic",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe6b893bb2c061"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafed5802c4eab4d"]
+						},
+						"PollFalse": { "Poll": ["cafe6bbce2e09d9d"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafed5802c4eab4d",
+				{
+					"parent": "cafe3fb94e5da0a0",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "c1238ece-fcbf-4ab9-bcfb-9371d5e3b576"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": ["6569e65842f294e0"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe167a334911b5",
+				{
+					"parent": "cafef4ea6c176115",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "Twitch"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafef4ea6c176115",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll Twitch",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe167a334911b5"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafe0ae580e50118"]
+						},
+						"PollFalse": { "Poll": ["cafef962e351d7c3"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe0ae580e50118",
+				{
+					"parent": "cafef4ea6c176115",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "3e7af76c-d4c7-48f3-8e86-b1cea07eef55"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": ["6569e65842f294e0"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe8109b6eefc54",
+				{
+					"parent": "cafed2b878c1d2c2",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "Travel1"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafed2b878c1d2c2",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll Travel1",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe8109b6eefc54"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafe913fd4ffce55"]
+						},
+						"PollFalse": { "Poll": ["cafee9a0a6fb88d5"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe913fd4ffce55",
+				{
+					"parent": "cafed2b878c1d2c2",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "8e2ccfc2-67d9-4ac1-87db-76e7535cd18d"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": ["6569e65842f294e0"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddComment": {
+				"parent": "cafee1fe81f7962f",
+				"name": "Notes",
+				"text": "This spawner will spawn everything to find out if a briefcase exist. Then it will let the vanilla one spawn."
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "cafe2cde84dc3581",
+				"name": "Notes",
+				"text": "This is for skipping any briefcase you brought from safehouse, so they won't spawn."
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "cafeeb8adf318ed0",
+				"name": "Notes",
+				"text": "These polls at the start will find out which case you picked up most recently and replace the default ICA case with it."
+			}
+		}
+	],
+	"patchVersion": 6
+}

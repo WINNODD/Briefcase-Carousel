@@ -574,6 +574,9 @@
 					"postInit": true
 				}
 			},
+			"outputCopying": {
+				"PickedUp": { "PickedUpChinese": ["0cb8c2f58bb6104c"] }
+			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
 		"cafe56f7a38542ed": {
@@ -604,6 +607,9 @@
 					"value": "cafeeae5220d4d14",
 					"postInit": true
 				}
+			},
+			"outputCopying": {
+				"PickedUp": { "PickedUpTravel2": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
@@ -671,6 +677,9 @@
 					"value": "cafeeae5220d4d14",
 					"postInit": true
 				}
+			},
+			"outputCopying": {
+				"PickedUp": { "PickedUpICA": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
@@ -1420,6 +1429,9 @@
 					"value": "cafeeae5220d4d14",
 					"postInit": true
 				}
+			},
+			"outputCopying": {
+				"PickedUp": { "PickedUpBirth": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
@@ -2746,6 +2758,9 @@
 					"postInit": true
 				}
 			},
+			"outputCopying": {
+				"PickedUp": { "PickedUpDJ": ["0cb8c2f58bb6104c"] }
+			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
 		"cafeb6eff6d361b7": {
@@ -2776,6 +2791,9 @@
 					"value": "cafeeae5220d4d14",
 					"postInit": true
 				}
+			},
+			"outputCopying": {
+				"PickedUp": { "PickedUpArctic": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
@@ -2808,6 +2826,9 @@
 					"postInit": true
 				}
 			},
+			"outputCopying": {
+				"PickedUp": { "PickedUpTravel3": ["0cb8c2f58bb6104c"] }
+			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
 		"cafecc9a47fa161f": {
@@ -2838,6 +2859,9 @@
 					"value": "cafeeae5220d4d14",
 					"postInit": true
 				}
+			},
+			"outputCopying": {
+				"PickedUp": { "PickedUpMK2": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
@@ -2870,6 +2894,9 @@
 					"postInit": true
 				}
 			},
+			"outputCopying": {
+				"PickedUp": { "PickedUpWide": ["0cb8c2f58bb6104c"] }
+			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
 		"cafe792fd5f025dc": {
@@ -2900,6 +2927,9 @@
 					"value": "cafeeae5220d4d14",
 					"postInit": true
 				}
+			},
+			"outputCopying": {
+				"PickedUp": { "PickedUpDeluxe": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
@@ -2932,6 +2962,9 @@
 					"postInit": true
 				}
 			},
+			"outputCopying": {
+				"PickedUp": { "PickedUpTool": ["0cb8c2f58bb6104c"] }
+			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
 		"cafe1ce3f4148ee1": {
@@ -2962,6 +2995,9 @@
 					"value": "cafeeae5220d4d14",
 					"postInit": true
 				}
+			},
+			"outputCopying": {
+				"PickedUp": { "PickedUpTwitch": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
@@ -2994,6 +3030,9 @@
 					"postInit": true
 				}
 			},
+			"outputCopying": {
+				"PickedUp": { "PickedUpHunt": ["0cb8c2f58bb6104c"] }
+			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
 		"cafe6930647dc45c": {
@@ -3024,6 +3063,9 @@
 					"value": "cafeeae5220d4d14",
 					"postInit": true
 				}
+			},
+			"outputCopying": {
+				"PickedUp": { "PickedUpMK3": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
@@ -3056,6 +3098,9 @@
 					"postInit": true
 				}
 			},
+			"outputCopying": {
+				"PickedUp": { "PickedUpLeather": ["0cb8c2f58bb6104c"] }
+			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
 		"cafe50844a0cd5d5": {
@@ -3086,6 +3131,9 @@
 					"value": "cafeeae5220d4d14",
 					"postInit": true
 				}
+			},
+			"outputCopying": {
+				"PickedUp": { "PickedUpGold": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
@@ -3118,6 +3166,9 @@
 					"postInit": true
 				}
 			},
+			"outputCopying": {
+				"PickedUp": { "PickedUpDeath": ["0cb8c2f58bb6104c"] }
+			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
 		"cafe21ed28a2b594": {
@@ -3148,6 +3199,9 @@
 					"value": "cafeeae5220d4d14",
 					"postInit": true
 				}
+			},
+			"outputCopying": {
+				"PickedUp": { "PickedUpTravel1": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
@@ -3180,6 +3234,9 @@
 					"postInit": true
 				}
 			},
+			"outputCopying": {
+				"PickedUp": { "PickedUpSieger": ["0cb8c2f58bb6104c"] }
+			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
 		"cafedc9d78bb3619": {
@@ -3210,6 +3267,9 @@
 					"value": "cafeeae5220d4d14",
 					"postInit": true
 				}
+			},
+			"outputCopying": {
+				"PickedUp": { "PickedUpLife": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
@@ -3242,6 +3302,9 @@
 					"postInit": true
 				}
 			},
+			"outputCopying": {
+				"PickedUp": { "PickedUpStadia": ["0cb8c2f58bb6104c"] }
+			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
 		"cafe67b16c2bda39": {
@@ -3273,6 +3336,9 @@
 					"postInit": true
 				}
 			},
+			"outputCopying": {
+				"PickedUp": { "PickedUpMilitary": ["0cb8c2f58bb6104c"] }
+			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
 		"cafece2434cc1412": {
@@ -3303,6 +3369,9 @@
 					"value": "cafeeae5220d4d14",
 					"postInit": true
 				}
+			},
+			"outputCopying": {
+				"PickedUp": { "PickedUpClassic": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},

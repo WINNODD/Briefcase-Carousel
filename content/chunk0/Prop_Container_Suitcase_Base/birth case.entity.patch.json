@@ -4,11 +4,11 @@
 	"patch": [
 		{
 			"SubEntityOperation": [
-				"fafe10e3a394cfe2",
+				"1c422c35c9459985",
 				{
 					"AddEventConnection": [
-						"ItemUsed",
-						"SetFalse",
+						"OnTrue",
+						"SetTrue",
 						"cafe7fc508f20fa6"
 					]
 				}
@@ -16,11 +16,11 @@
 		},
 		{
 			"SubEntityOperation": [
-				"f092bc411a4ce601",
+				"1c422c35c9459985",
 				{
 					"AddEventConnection": [
-						"Started",
-						"SetTrue",
+						"OnFalse",
+						"SetFalse",
 						"cafe7fc508f20fa6"
 					]
 				}

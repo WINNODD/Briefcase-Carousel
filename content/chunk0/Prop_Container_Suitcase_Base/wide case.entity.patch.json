@@ -10,11 +10,11 @@
 		},
 		{
 			"SubEntityOperation": [
-				"fafe10e3a394cfe2",
+				"1c422c35c9459985",
 				{
 					"AddEventConnection": [
-						"ItemUsed",
-						"SetFalse",
+						"OnTrue",
+						"SetTrue",
 						"cafea85677b9fdcb"
 					]
 				}
@@ -22,11 +22,11 @@
 		},
 		{
 			"SubEntityOperation": [
-				"f092bc411a4ce601",
+				"1c422c35c9459985",
 				{
 					"AddEventConnection": [
-						"Started",
-						"SetTrue",
+						"OnFalse",
+						"SetFalse",
 						"cafea85677b9fdcb"
 					]
 				}

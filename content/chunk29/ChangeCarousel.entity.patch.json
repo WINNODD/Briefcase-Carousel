@@ -802,10 +802,2836 @@
 							"value": "cafef41833e7cb1d",
 							"postInit": true
 						}
+					},
+					"events": {
+						"PickedUpArctic": { "In": ["cafe7dc7ba06620c"] },
+						"PickedUpBirth": { "In": ["cafe58db1a228e8c"] },
+						"PickedUpChinese": { "In": ["cafe9f1965e52523"] },
+						"PickedUpClassic": { "In": ["cafe9e8a07f74413"] },
+						"PickedUpDeath": { "In": ["cafe0392c92f9335"] },
+						"PickedUpDeluxe": { "In": ["cafe720fdba46afe"] },
+						"PickedUpDJ": { "In": ["cafe74ed51435b9e"] },
+						"PickedUpGold": { "In": ["cafe1706ee9c4ce0"] },
+						"PickedUpHunt": { "In": ["cafe787e1f0ad268"] },
+						"PickedUpICA": { "In": ["cafe84887eb1b4e7"] },
+						"PickedUpLeather": { "In": ["cafe4930cf9bad71"] },
+						"PickedUpLife": { "In": ["cafe37031310b3de"] },
+						"PickedUpMilitary": { "In": ["cafe104dcd751c8d"] },
+						"PickedUpMK2": { "In": ["cafec351b70a528a"] },
+						"PickedUpMK3": { "In": ["cafea43700eabc0a"] },
+						"PickedUpSieger": { "In": ["cafec093623cd704"] },
+						"PickedUpStadia": { "In": ["cafeb0c3e67ac603"] },
+						"PickedUpTool": { "In": ["cafecd166034c43f"] },
+						"PickedUpTravel1": { "In": ["cafed3f81fffbd87"] },
+						"PickedUpTravel2": { "In": ["cafee9ac02de0416"] },
+						"PickedUpTravel3": { "In": ["cafef89dc1bcc4d0"] },
+						"PickedUpTwitch": { "In": ["cafecebebd16b3d3"] },
+						"PickedUpWide": { "In": ["cafef133c42eaa36"] }
 					}
 				}
 			]
-		}
+		},
+		{
+			"AddEntity": [
+				"cafecebebd16b3d3",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButTwitch",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": {
+							"SetFalse": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						},
+						"Out02": {
+							"SetTrue": [
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe6177f928439d",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "0SetAllFalseTemplate",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": {
+							"SetFalse": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafec351b70a528a",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButMK2",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": {
+							"SetFalse": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						},
+						"Out02": {
+							"SetTrue": [
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe0392c92f9335",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButDeath",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": {
+							"SetFalse": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						},
+						"Out02": {
+							"SetTrue": [
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe104dcd751c8d",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButMilitary",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": {
+							"SetFalse": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						},
+						"Out02": {
+							"SetTrue": [
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafea43700eabc0a",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButMK3",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": {
+							"SetFalse": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						},
+						"Out02": {
+							"SetTrue": [
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe84887eb1b4e7",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButICA",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": {
+							"SetFalse": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						},
+						"Out02": {
+							"SetTrue": [
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe1706ee9c4ce0",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButGold",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": {
+							"SetFalse": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						},
+						"Out02": {
+							"SetTrue": [
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe9f1965e52523",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButChinese",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": {
+							"SetFalse": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						},
+						"Out02": {
+							"SetTrue": [
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe9e8a07f74413",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButClassic",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": {
+							"SetFalse": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						},
+						"Out02": {
+							"SetTrue": [
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafee9ac02de0416",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButTravel2",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": {
+							"SetFalse": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						},
+						"Out02": {
+							"SetTrue": [
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafecd166034c43f",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButTool",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": {
+							"SetFalse": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						},
+						"Out02": {
+							"SetTrue": [
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafef133c42eaa36",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButWide",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": {
+							"SetFalse": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						},
+						"Out02": {
+							"SetTrue": [
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe37031310b3de",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButLife",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": {
+							"SetFalse": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						},
+						"Out02": {
+							"SetTrue": [
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafed3f81fffbd87",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButTravel1",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": {
+							"SetFalse": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						},
+						"Out02": {
+							"SetTrue": [
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7dc7ba06620c",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButArctic",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": {
+							"SetFalse": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						},
+						"Out02": {
+							"SetTrue": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe74ed51435b9e",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButDJ",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": {
+							"SetFalse": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						},
+						"Out02": {
+							"SetTrue": [
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafec093623cd704",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButSieger",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": {
+							"SetFalse": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						},
+						"Out02": {
+							"SetTrue": [
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe720fdba46afe",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButDeluxe",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": {
+							"SetFalse": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						},
+						"Out02": {
+							"SetTrue": [
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeb0c3e67ac603",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButStadia",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": {
+							"SetFalse": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						},
+						"Out02": {
+							"SetTrue": [
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe58db1a228e8c",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButBirth",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": {
+							"SetFalse": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						},
+						"Out02": {
+							"SetTrue": [
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafef89dc1bcc4d0",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButTravel3",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": {
+							"SetFalse": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						},
+						"Out02": {
+							"SetTrue": [
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe787e1f0ad268",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButHunt",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": {
+							"SetFalse": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						},
+						"Out02": {
+							"SetTrue": [
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe4930cf9bad71",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButLeather",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": {
+							"SetFalse": [
+								{
+									"ref": "cafeb56552de3c3e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe47cd7f14b1d3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeaebb59e89a46",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6b893bb2c061",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe10eee43695ba",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe92ab9878a0f3",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafea078daf41d84",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafeec772b9f2841",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafee1c6ffbf027e",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe6dbd365ccdad",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe4ecf935b0fe4",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafecf236034d0a7",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe89b9f6c3eec1",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafed243d752e944",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2e0912851db5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafead84972dfcdc",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe415f09f88f76",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe8109b6eefc54",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafef388d162c5ec",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2f5ecf039f2d",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe167a334911b5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe52e637cf7067",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						},
+						"Out02": {
+							"SetTrue": [
+								{
+									"ref": "cafe14139b42718f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{ "AddExternalScene": "006864DBF5FD7CD4" }
 	],
 	"patchVersion": 6
 }
