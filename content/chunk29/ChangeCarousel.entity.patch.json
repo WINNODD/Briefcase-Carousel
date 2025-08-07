@@ -3631,6 +3631,20 @@
 				}
 			]
 		},
+		{
+			"AddPinConnectionOverrideDelete": {
+				"fromEntity": {
+					"ref": "6d07147f642a3aeb",
+					"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+				},
+				"fromPin": "OnFailed",
+				"toEntity": {
+					"ref": "cafe2cde84dc3581",
+					"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+				},
+				"toPin": "Poll"
+			}
+		},
 		{ "AddExternalScene": "006864DBF5FD7CD4" }
 	],
 	"patchVersion": 6
