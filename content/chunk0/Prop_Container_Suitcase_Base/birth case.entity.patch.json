@@ -27,6 +27,17 @@
 			]
 		},
 		{
+			"SubEntityOperation": [
+				"b9b1c507d0b07043",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_rValueEntity",
+						"value": "cafe492e3acc1190"
+					}
+				}
+			]
+		},
+		{
 			"AddEntity": [
 				"cafe927d51d18674",
 				{
@@ -80,6 +91,66 @@
 						"OnTrue": { "TransmitTrue": ["cafe927d51d18674"] },
 						"OnFalse": {
 							"TransmitFalse": ["cafe927d51d18674"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeaba0b72cec6d",
+				{
+					"parent": "cafe492e3acc1190",
+					"name": "Token_ID_CaseOpened",
+					"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+					"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sName": {
+							"type": "ZString",
+							"value": "CaseOpenedBirth"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe0613b278d0a6",
+				{
+					"parent": "cafe492e3acc1190",
+					"name": "EventChannelReceiver_ValueBool",
+					"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_valuebool.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_valuebool.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rChannelToken": {
+							"type": "SEntityTemplateReference",
+							"value": "cafeaba0b72cec6d"
+						},
+						"m_bValue": { "type": "bool", "value": false }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe492e3acc1190",
+				{
+					"parent": "494d9eeea4c604bb",
+					"name": "VROpenSuitcase or MyMod",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ANY"
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								"ca21cce848130ab6",
+								"cafe0613b278d0a6"
+							],
+							"postInit": true
 						}
 					}
 				}

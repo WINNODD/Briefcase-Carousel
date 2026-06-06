@@ -82,6 +82,10 @@
 					"postInit": true
 				}
 			},
+			"events": {
+				"OpenCase": { "SetTrue": ["cafec6de2e6284bd"] },
+				"CloseCase": { "SetFalse": ["cafec6de2e6284bd"] }
+			},
 			"subsets": { "AudioEmitters": ["7fa77e036d8562b9"] }
 		},
 		"7fa77e036d8562b9": {
@@ -203,6 +207,45 @@
 			},
 			"outputCopying": {
 				"OnTrue": { "PickedUp": ["7fa77e036d8562b9"] }
+			}
+		},
+		"cafe4e23404c17ca": {
+			"parent": "6885e92ffce55a4d",
+			"name": "EventChannelTransmitter_bool",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_bool.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_bool.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe1c476528d181",
+					"postInit": true
+				}
+			}
+		},
+		"cafe1c476528d181": {
+			"parent": "cafe4e23404c17ca",
+			"name": "Token_ID_CaseOpened",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "CaseOpenedLeather"
+				}
+			}
+		},
+		"cafec6de2e6284bd": {
+			"parent": "cafe4e23404c17ca",
+			"name": "CaseOpened",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false },
+				"m_bFireOnLevelStart": { "type": "bool", "value": false }
+			},
+			"events": {
+				"OnTrue": { "TransmitTrue": ["cafe4e23404c17ca"] },
+				"OnFalse": { "TransmitFalse": ["cafe4e23404c17ca"] }
 			}
 		}
 	},
