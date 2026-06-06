@@ -51,7 +51,7 @@
 						"PollTrue": {
 							"GetRepositoryID": ["cafee78a13978b0c"]
 						},
-						"PollFalse": { "Poll": ["cafea570c91a45e3"] }
+						"PollFalse": { "Poll": ["cafef82df872d603"] }
 					}
 				}
 			]
@@ -1497,6 +1497,71 @@
 						"m_sId": {
 							"type": "ZGuid",
 							"value": "8e2ccfc2-67d9-4ac1-87db-76e7535cd18d"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": [
+								"6569e65842f294e0",
+								"ca7308efe3d5668a"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe1c15bfc2f029",
+				{
+					"parent": "cafef82df872d603",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "Sport"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafef82df872d603",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll Sport",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe1c15bfc2f029"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafe0fc0a4a4d2fb"]
+						},
+						"PollFalse": { "Poll": ["cafea570c91a45e3"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe0fc0a4a4d2fb",
+				{
+					"parent": "cafef82df872d603",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "56a7e2d3-9b95-4d7a-bcbb-f05aaadd13b6"
 						}
 					},
 					"events": {

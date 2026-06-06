@@ -820,6 +820,7 @@
 						"PickedUpMK2": { "In": ["cafec351b70a528a"] },
 						"PickedUpMK3": { "In": ["cafea43700eabc0a"] },
 						"PickedUpSieger": { "In": ["cafec093623cd704"] },
+						"PickedUpSport": { "In": ["cafe202d14d211ec"] },
 						"PickedUpStadia": { "In": ["cafeb0c3e67ac603"] },
 						"PickedUpTool": { "In": ["cafecd166034c43f"] },
 						"PickedUpTravel1": { "In": ["cafed3f81fffbd87"] },
@@ -2037,6 +2038,51 @@
 							"type": "SEntityTemplateReference",
 							"value": {
 								"ref": "cafe52e637cf7067",
+								"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe202d14d211ec",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButSport",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": { "In": ["cafea4987d6a7a13"] },
+						"Out02": {
+							"SetValue": [
+								{
+									"ref": "cafeaf31c0390079",
+									"value": {
+										"type": "bool",
+										"value": true
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeaf31c0390079",
+				{
+					"parent": "cafe202d14d211ec",
+					"name": "VBS",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": {
+								"ref": "cafe1c15bfc2f029",
 								"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
 							}
 						}
