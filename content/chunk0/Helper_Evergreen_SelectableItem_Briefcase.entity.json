@@ -54,6 +54,9 @@
 					"postInit": true
 				}
 			},
+			"events": {
+				"ActionTriggered": { "Poll": ["cafeafa14460cd5b"] }
+			},
 			"outputCopying": {
 				"ActionTriggered": { "PickUp": ["76bc7debe63916b6"] }
 			}
@@ -167,7 +170,9 @@
 						"c41c3d3ae14a9891",
 						"2db46906b7f1680c",
 						"535922e823d563a3",
-						"a0c7ffb02e4addd3"
+						"a0c7ffb02e4addd3",
+						"cafea9d9d5034b06",
+						"cafee80a1b2a42ad"
 					],
 					"postInit": true
 				},
@@ -836,7 +841,9 @@
 							"ref": "415a2ef2c7e0055e",
 							"value": { "type": "bool", "value": false }
 						}
-					]
+					],
+					"SetFalse": ["cafef89d6465dc80"],
+					"Poll": ["cafeafa14460cd5b"]
 				}
 			},
 			"outputCopying": {
@@ -2083,7 +2090,9 @@
 						"c41c3d3ae14a9891",
 						"2db46906b7f1680c",
 						"535922e823d563a3",
-						"a0c7ffb02e4addd3"
+						"a0c7ffb02e4addd3",
+						"cafea9d9d5034b06",
+						"cafee80a1b2a42ad"
 					],
 					"postInit": true
 				},
@@ -2783,7 +2792,8 @@
 							"ref": "415a2ef2c7e0055e",
 							"value": { "type": "bool", "value": true }
 						}
-					]
+					],
+					"SetTrue": ["cafef89d6465dc80"]
 				}
 			},
 			"outputCopying": {
@@ -2840,7 +2850,11 @@
 				},
 				"ZoomedInPrompts": {
 					"isArray": true,
-					"refersTo": ["60b6620461526909"]
+					"refersTo": [
+						"60b6620461526909",
+						"cafea9d9d5034b06",
+						"cafee80a1b2a42ad"
+					]
 				},
 				"ZoomedInAddOns": {
 					"isArray": true,
@@ -3206,7 +3220,8 @@
 					"PickUp": ["ff28c16eb9073f6e"]
 				},
 				"ZoomIn": { "ZoomedIn": ["0cd5d1c19b606cb9"] },
-				"ZoomOut": { "ZoomedOut": ["0cd5d1c19b606cb9"] }
+				"ZoomOut": { "ZoomedOut": ["0cd5d1c19b606cb9"] },
+				"OpenCase": { "OpenCase": ["0cd5d1c19b606cb9"] }
 			},
 			"propertyAliases": {
 				"GearWall": [
@@ -3620,6 +3635,150 @@
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafea9d9d5034b06": {
+			"parent": "cafe079180744549",
+			"name": "Open Case",
+			"factory": "[modules:/zevergreenmenuentrypromptbuttonaction.class].pc_entitytype",
+			"blueprint": "[modules:/zevergreenmenuentrypromptbuttonaction.class].pc_entityblueprint",
+			"properties": {
+				"m_inputTrigger": {
+					"type": "ZEvergreenMenuEntryPromptButtonAction.EInputTrigger",
+					"value": "ACTION_Y"
+				},
+				"m_sweetPromptText": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/localization/hitman6/conversations/ui/pro/gamemode_evergreen/evergreen_setpieces.sweetmenutext?/evergreen_setpieces_stash_text.sweetline].pc_sweetline",
+						"flag": "5F"
+					}
+				},
+				"m_isVisible": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe1a6eaab34da6"
+				}
+			},
+			"events": {
+				"ActionTriggered": { "SetFalse": ["cafee2b7a823bb64"] }
+			},
+			"outputCopying": {
+				"ActionTriggered": { "OpenCase": ["b0906e8ecb81a1b0"] }
+			}
+		},
+		"cafee2b7a823bb64": {
+			"parent": "cafe079180744549",
+			"name": "Closed",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": { "m_bValue": { "type": "bool", "value": true } }
+		},
+		"cafe1a6eaab34da6": {
+			"parent": "cafea9d9d5034b06",
+			"name": "Placed and zoomed in and closed",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bSignalsInEditMode": { "type": "bool", "value": true },
+				"m_bFireOnLevelStart": { "type": "bool", "value": true },
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						"f474d70e40bccdca",
+						"cafee2b7a823bb64",
+						"cafef89d6465dc80"
+					]
+				}
+			}
+		},
+		"cafef89d6465dc80": {
+			"parent": "cafe079180744549",
+			"name": "ZoomedIn",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafee80a1b2a42ad": {
+			"parent": "cafe079180744549",
+			"name": "Close Case",
+			"factory": "[modules:/zevergreenmenuentrypromptbuttonaction.class].pc_entitytype",
+			"blueprint": "[modules:/zevergreenmenuentrypromptbuttonaction.class].pc_entityblueprint",
+			"properties": {
+				"m_inputTrigger": {
+					"type": "ZEvergreenMenuEntryPromptButtonAction.EInputTrigger",
+					"value": "ACTION_Y"
+				},
+				"m_sweetPromptText": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/localization/hitman6/conversations/ui/actionprompts.sweetmenutext?/eui_text_button_close_lid.sweetline].pc_sweetline",
+						"flag": "5F"
+					}
+				},
+				"m_isVisible": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe9bbe1729d57d"
+				}
+			},
+			"events": {
+				"ActionTriggered": { "SetTrue": ["cafee2b7a823bb64"] }
+			},
+			"outputCopying": {
+				"ActionTriggered": { "CloseCase": ["b0906e8ecb81a1b0"] }
+			}
+		},
+		"cafe9bbe1729d57d": {
+			"parent": "cafee80a1b2a42ad",
+			"name": "Placed and zoomed in and opened",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bSignalsInEditMode": { "type": "bool", "value": true },
+				"m_bFireOnLevelStart": { "type": "bool", "value": true },
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						"f474d70e40bccdca",
+						"cafe03d89634b4d7",
+						"cafef89d6465dc80"
+					]
+				}
+			}
+		},
+		"cafe079180744549": {
+			"parent": "d8531e35a49dfb20",
+			"name": "NewButtons",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe03d89634b4d7": {
+			"parent": "cafe079180744549",
+			"name": "Opened",
+			"factory": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafee2b7a823bb64"
+				}
+			}
+		},
+		"cafeafa14460cd5b": {
+			"parent": "cafe079180744549",
+			"name": "Is case closed when zoom out or pick up?",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafee2b7a823bb64"
+				}
+			},
+			"events": { "PollFalse": { "SetTrue": ["cafee2b7a823bb64"] } },
+			"outputCopying": {
+				"PollFalse": { "CloseCase": ["b0906e8ecb81a1b0"] }
 			}
 		}
 	},

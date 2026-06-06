@@ -27,6 +27,17 @@
 			]
 		},
 		{
+			"SubEntityOperation": [
+				"b9b1c507d0b07043",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_rValueEntity",
+						"value": "cafe99d17172e164"
+					}
+				}
+			]
+		},
+		{
 			"AddEntity": [
 				"cafe74de73458cc6",
 				{
@@ -80,6 +91,144 @@
 						"OnTrue": { "TransmitTrue": ["cafe74de73458cc6"] },
 						"OnFalse": {
 							"TransmitFalse": ["cafe74de73458cc6"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe675fc449f800",
+				{
+					"parent": "cafee537e484420a",
+					"name": "Token_ID_CaseOpened",
+					"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+					"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sName": {
+							"type": "ZString",
+							"value": "CaseOpenedArctic"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafee537e484420a",
+				{
+					"parent": "cafe99d17172e164",
+					"name": "EventChannelReceiver_ValueBool",
+					"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_valuebool.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_valuebool.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rChannelToken": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe675fc449f800"
+						},
+						"m_bValue": { "type": "bool", "value": false }
+					},
+					"events": { "OnTrue": { "In": [] } }
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe4f91fe0de883",
+				{
+					"parent": "cafeefb272956211",
+					"name": "SignalFork_Void",
+					"factory": "[modules:/zsignalforkentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_void.class].pc_entityblueprint",
+					"outputCopying": {
+						"Out01": { "SetAnim": ["cafeefb272956211"] },
+						"Out02": { "PlayAnim": ["cafeefb272956211"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe9d9efa4b2e5d",
+				{
+					"parent": "cafeefb272956211",
+					"name": "SignalGate_Void",
+					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
+					"properties": {
+						"m_rCondition": {
+							"type": "SEntityTemplateReference",
+							"value": "013267b782e901c0",
+							"postInit": true
+						}
+					},
+					"events": { "Out": { "In": ["cafe4f91fe0de883"] } }
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeefb272956211",
+				{
+					"parent": "cafee537e484420a",
+					"name": "FriskSuitcase",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+					"properties": {
+						"m_rCondition": {
+							"type": "SEntityTemplateReference",
+							"value": "013267b782e901c0",
+							"postInit": true
+						}
+					},
+					"events": {
+						"PlayAnim": { "Play": ["38fa7df5ec246a82"] },
+						"SetAnim": {
+							"SelectAnim": [
+								{
+									"ref": "38fa7df5ec246a82",
+									"value": {
+										"type": "ZString",
+										"value": "frisk"
+									}
+								}
+							]
+						}
+					},
+					"inputCopying": {
+						"In": { "In": ["cafe9d9efa4b2e5d"] }
+					},
+					"propertyAliases": {
+						"m_rCondition": [
+							{
+								"originalProperty": "m_rCondition",
+								"originalEntity": "cafe9d9efa4b2e5d"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe99d17172e164",
+				{
+					"parent": "494d9eeea4c604bb",
+					"name": "VROpenSuitcase or MyMod",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ANY"
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								"ca21cce848130ab6",
+								"cafee537e484420a"
+							],
+							"postInit": true
 						}
 					}
 				}
