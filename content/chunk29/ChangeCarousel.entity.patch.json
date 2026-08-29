@@ -532,6 +532,17 @@
 		},
 		{
 			"SubEntityOperation": [
+				"a87cc9c6da2e525c",
+				{
+					"AddProperty": [
+						"m_bVisible",
+						{ "type": "bool", "value": false }
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
 				"582c9bcfd32710e2",
 				{
 					"AddProperty": [
