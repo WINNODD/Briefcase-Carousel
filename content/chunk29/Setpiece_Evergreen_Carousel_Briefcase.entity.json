@@ -549,45 +549,11 @@
 				}
 			}
 		},
-		"cafed374308509ee": {
-			"parent": "cafedf0d4284d1c1",
-			"name": "2Helper_Evergreen_SelectableItem_ChineseBriefcase",
-			"factory": "003F74D6CAE48CFE",
-			"blueprint": "00EC892698A65436",
-			"properties": {
-				"GearWall": { "type": "bool", "value": true },
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": { "x": 90.0, "y": 0.0, "z": 180.0 },
-						"position": { "x": 0.0, "y": -0.6, "z": 2.43 }
-					}
-				},
-				"m_bVisibleInBoxReflection": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bVisible": { "type": "bool", "value": true },
-				"m_eRoomBehaviour": {
-					"type": "ZSpatialEntity.ERoomBehaviour",
-					"value": "ROOM_DYNAMIC"
-				},
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "cafeeae5220d4d14",
-					"postInit": true
-				}
-			},
-			"outputCopying": {
-				"PickedUp": { "PickedUpChinese": ["0cb8c2f58bb6104c"] }
-			},
-			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
-		},
 		"cafe56f7a38542ed": {
 			"parent": "cafe372a99380aaa",
-			"name": "1Helper_Evergreen_SelectableItem_AluminumTravelBriefcaseS2",
-			"factory": "00AC17222A46F42F",
-			"blueprint": "0085E8FC187B918A",
+			"name": "1Helper_Evergreen_SelectableItem_AluminumTravelBriefcaseS3",
+			"factory": "00652BA50B5DA230",
+			"blueprint": "00A3FA740C9F15BB",
 			"properties": {
 				"GearWall": { "type": "bool", "value": true },
 				"m_mTransform": {
@@ -613,7 +579,7 @@
 				}
 			},
 			"outputCopying": {
-				"PickedUp": { "PickedUpTravel2": ["0cb8c2f58bb6104c"] }
+				"PickedUp": { "PickedUpTravel3": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
@@ -626,7 +592,12 @@
 				"m_Geom": {
 					"type": "SEntityTemplateReference",
 					"value": "cafeeae5220d4d14"
-				}
+				},
+				"m_fAngles": {
+					"type": "SVector3",
+					"value": { "x": 0.0, "y": 0.0, "z": 0.0 }
+				},
+				"m_bSetLocalRotation": { "type": "bool", "value": true }
 			}
 		},
 		"cafe20dc691f2106": {
@@ -652,40 +623,6 @@
 					"postInit": true
 				}
 			}
-		},
-		"cafeb6aac2fdbfb7": {
-			"parent": "cafe68f63ba2d405",
-			"name": "6Helper_Evergreen_SelectableItem_ICABriefcase",
-			"factory": "00A3F2BFAF8DD31F",
-			"blueprint": "00A297BBFAF94713",
-			"properties": {
-				"GearWall": { "type": "bool", "value": true },
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": { "x": 90.0, "y": 0.0, "z": -60.0 },
-						"position": { "x": -0.5196, "y": 0.3, "z": 0.525 }
-					}
-				},
-				"m_bVisibleInBoxReflection": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bVisible": { "type": "bool", "value": true },
-				"m_eRoomBehaviour": {
-					"type": "ZSpatialEntity.ERoomBehaviour",
-					"value": "ROOM_DYNAMIC"
-				},
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "cafeeae5220d4d14",
-					"postInit": true
-				}
-			},
-			"outputCopying": {
-				"PickedUp": { "PickedUpICA": ["0cb8c2f58bb6104c"] }
-			},
-			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
 		"cafeba50f6b8178a": {
 			"parent": "cafeadb57659cb1c",
@@ -879,7 +816,7 @@
 		},
 		"cafedde0c5f90237": {
 			"parent": "cafeadb57659cb1c",
-			"name": "WaveformGenerator 5 to 0 (undone)",
+			"name": "WaveformGenerator 5 to 0",
 			"factory": "[modules:/zwaveformgeneratorentity.class].pc_entitytype",
 			"blueprint": "[modules:/zwaveformgeneratorentity.class].pc_entityblueprint",
 			"properties": {
@@ -1401,9 +1338,9 @@
 		},
 		"cafeca3dcb3a0244": {
 			"parent": "cafedf0d4284d1c1",
-			"name": "5Helper_Evergreen_SelectableItem_PremiereWhiteBriefcase",
-			"factory": "00802D56DBF604F3",
-			"blueprint": "00F843C5A73DEA0C",
+			"name": "5Helper_Evergreen_SelectableItem_SniperCase",
+			"factory": "00AD3C42EABBB596",
+			"blueprint": "0082B3BDCF54F052",
 			"properties": {
 				"GearWall": { "type": "bool", "value": true },
 				"m_mTransform": {
@@ -1429,7 +1366,7 @@
 				}
 			},
 			"outputCopying": {
-				"PickedUp": { "PickedUpBirth": ["0cb8c2f58bb6104c"] }
+				"PickedUp": { "PickedUpWide": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
@@ -1452,7 +1389,9 @@
 						"cafe69e8e0d39251",
 						"cafe72e062c97e9d",
 						"cafe0b9adf8652bb",
-						"cafe2d4e511c7105"
+						"cafe2d4e511c7105",
+						"cafed485a424aa8f",
+						"cafead8828bc4e1c"
 					]
 				}
 			}
@@ -1669,8 +1608,7 @@
 						"cafe4ba89ec745a0",
 						"cafe67b16c2bda39",
 						"cafece2434cc1412",
-						"cafedc9d78bb3619",
-						"cafefd6034fde8e8"
+						"cafedc9d78bb3619"
 					]
 				}
 			},
@@ -2419,9 +2357,7 @@
 						"cafe56f7a38542ed",
 						"cafee622671863b0",
 						"cafe2e4e91b61c97",
-						"cafe792fd5f025dc",
-						"cafe1ce3f4148ee1",
-						"cafe6930647dc45c"
+						"cafe792fd5f025dc"
 					]
 				}
 			},
@@ -2503,11 +2439,8 @@
 					"type": "TArray<SEntityTemplateReference>",
 					"value": [
 						"cafecf78a5d03a46",
-						"cafed374308509ee",
-						"cafeb6eff6d361b7",
 						"cafecc9a47fa161f",
-						"cafeca3dcb3a0244",
-						"cafe661a152a0758"
+						"cafeca3dcb3a0244"
 					]
 				}
 			},
@@ -2590,10 +2523,8 @@
 					"value": [
 						"cafe21ed28a2b594",
 						"cafe50844a0cd5d5",
-						"cafeaeddd79f4251",
 						"cafe8297d7d26aa6",
-						"cafe64aa364c3b0c",
-						"cafeb6aac2fdbfb7"
+						"cafe64aa364c3b0c"
 					]
 				}
 			},
@@ -2762,45 +2693,11 @@
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
-		"cafeb6eff6d361b7": {
-			"parent": "cafedf0d4284d1c1",
-			"name": "3Helper_Evergreen_SelectableItem_ArcticToolBox",
-			"factory": "00E1F8BC67FAA401",
-			"blueprint": "00A96E472A8C062F",
-			"properties": {
-				"GearWall": { "type": "bool", "value": true },
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": { "x": 90.0, "y": 0.0, "z": 180.0 },
-						"position": { "x": 0.0, "y": -0.6, "z": 1.955 }
-					}
-				},
-				"m_bVisibleInBoxReflection": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bVisible": { "type": "bool", "value": true },
-				"m_eRoomBehaviour": {
-					"type": "ZSpatialEntity.ERoomBehaviour",
-					"value": "ROOM_DYNAMIC"
-				},
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "cafeeae5220d4d14",
-					"postInit": true
-				}
-			},
-			"outputCopying": {
-				"PickedUp": { "PickedUpArctic": ["0cb8c2f58bb6104c"] }
-			},
-			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
-		},
 		"cafecf78a5d03a46": {
 			"parent": "cafedf0d4284d1c1",
-			"name": "1Helper_Evergreen_SelectableItem_AluminumTravelBriefcaseS3",
-			"factory": "00652BA50B5DA230",
-			"blueprint": "00A3FA740C9F15BB",
+			"name": "1Helper_Evergreen_SelectableItem_PremiereWhiteBriefcase",
+			"factory": "00802D56DBF604F3",
+			"blueprint": "00F843C5A73DEA0C",
 			"properties": {
 				"GearWall": { "type": "bool", "value": true },
 				"m_mTransform": {
@@ -2826,7 +2723,7 @@
 				}
 			},
 			"outputCopying": {
-				"PickedUp": { "PickedUpTravel3": ["0cb8c2f58bb6104c"] }
+				"PickedUp": { "PickedUpBirth": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
@@ -2861,40 +2758,6 @@
 			},
 			"outputCopying": {
 				"PickedUp": { "PickedUpMK2": ["0cb8c2f58bb6104c"] }
-			},
-			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
-		},
-		"cafe661a152a0758": {
-			"parent": "cafedf0d4284d1c1",
-			"name": "6Helper_Evergreen_SelectableItem_SniperCase",
-			"factory": "00AD3C42EABBB596",
-			"blueprint": "0082B3BDCF54F052",
-			"properties": {
-				"GearWall": { "type": "bool", "value": true },
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": { "x": 90.0, "y": 0.0, "z": 180.0 },
-						"position": { "x": 0.0, "y": -0.6, "z": 0.525 }
-					}
-				},
-				"m_bVisibleInBoxReflection": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bVisible": { "type": "bool", "value": true },
-				"m_eRoomBehaviour": {
-					"type": "ZSpatialEntity.ERoomBehaviour",
-					"value": "ROOM_DYNAMIC"
-				},
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "cafeeae5220d4d14",
-					"postInit": true
-				}
-			},
-			"outputCopying": {
-				"PickedUp": { "PickedUpWide": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
@@ -2934,9 +2797,9 @@
 		},
 		"cafe2e4e91b61c97": {
 			"parent": "cafe372a99380aaa",
-			"name": "3Helper_Evergreen_SelectableItem_Toolbox",
-			"factory": "006B4AFB5C47BC2E",
-			"blueprint": "0086710EF14CD508",
+			"name": "3Helper_Evergreen_SelectableItem_LeatherBriefcase",
+			"factory": "007CB563CD4F5FD1",
+			"blueprint": "0073811E3C51D799",
 			"properties": {
 				"GearWall": { "type": "bool", "value": true },
 				"m_mTransform": {
@@ -2962,41 +2825,7 @@
 				}
 			},
 			"outputCopying": {
-				"PickedUp": { "PickedUpTool": ["0cb8c2f58bb6104c"] }
-			},
-			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
-		},
-		"cafe1ce3f4148ee1": {
-			"parent": "cafe372a99380aaa",
-			"name": "5Helper_Evergreen_SelectableItem_ThePurpleStreakICABriefcase",
-			"factory": "00C744504EBFDDF1",
-			"blueprint": "00DDDE41F559375E",
-			"properties": {
-				"GearWall": { "type": "bool", "value": true },
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": { "x": 90.0, "y": 0.0, "z": -120.0 },
-						"position": { "x": -0.5196, "y": -0.3, "z": 1.005 }
-					}
-				},
-				"m_bVisibleInBoxReflection": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bVisible": { "type": "bool", "value": true },
-				"m_eRoomBehaviour": {
-					"type": "ZSpatialEntity.ERoomBehaviour",
-					"value": "ROOM_DYNAMIC"
-				},
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "cafeeae5220d4d14",
-					"postInit": true
-				}
-			},
-			"outputCopying": {
-				"PickedUp": { "PickedUpTwitch": ["0cb8c2f58bb6104c"] }
+				"PickedUp": { "PickedUpLeather": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
@@ -3034,45 +2863,11 @@
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
-		"cafe6930647dc45c": {
-			"parent": "cafe372a99380aaa",
-			"name": "6Helper_Evergreen_SelectableItem_ICABriefcaseMKIII",
-			"factory": "00A2482A88095376",
-			"blueprint": "00B7FC885DF3B543",
-			"properties": {
-				"GearWall": { "type": "bool", "value": true },
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": { "x": 90.0, "y": 0.0, "z": -120.0 },
-						"position": { "x": -0.5196, "y": -0.3, "z": 0.525 }
-					}
-				},
-				"m_bVisibleInBoxReflection": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bVisible": { "type": "bool", "value": true },
-				"m_eRoomBehaviour": {
-					"type": "ZSpatialEntity.ERoomBehaviour",
-					"value": "ROOM_DYNAMIC"
-				},
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "cafeeae5220d4d14",
-					"postInit": true
-				}
-			},
-			"outputCopying": {
-				"PickedUp": { "PickedUpMK3": ["0cb8c2f58bb6104c"] }
-			},
-			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
-		},
 		"cafe8297d7d26aa6": {
 			"parent": "cafe68f63ba2d405",
-			"name": "4Helper_Evergreen_SelectableItem_LeatherBriefcase",
-			"factory": "007CB563CD4F5FD1",
-			"blueprint": "0073811E3C51D799",
+			"name": "4Helper_Evergreen_SelectableItem_ThePurpleStreakICABriefcase",
+			"factory": "00C744504EBFDDF1",
+			"blueprint": "00DDDE41F559375E",
 			"properties": {
 				"GearWall": { "type": "bool", "value": true },
 				"m_mTransform": {
@@ -3098,7 +2893,7 @@
 				}
 			},
 			"outputCopying": {
-				"PickedUp": { "PickedUpLeather": ["0cb8c2f58bb6104c"] }
+				"PickedUp": { "PickedUpTwitch": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
@@ -3138,9 +2933,9 @@
 		},
 		"cafe64aa364c3b0c": {
 			"parent": "cafe68f63ba2d405",
-			"name": "5Helper_Evergreen_SelectableItem_UltimateBlackBriefcase",
-			"factory": "00A4323C760E7D3F",
-			"blueprint": "00DF826CA5AA9AE0",
+			"name": "5Helper_Evergreen_SelectableItem_Toolbox",
+			"factory": "006B4AFB5C47BC2E",
+			"blueprint": "0086710EF14CD508",
 			"properties": {
 				"GearWall": { "type": "bool", "value": true },
 				"m_mTransform": {
@@ -3166,15 +2961,15 @@
 				}
 			},
 			"outputCopying": {
-				"PickedUp": { "PickedUpDeath": ["0cb8c2f58bb6104c"] }
+				"PickedUp": { "PickedUpTool": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
 		"cafe21ed28a2b594": {
 			"parent": "cafe68f63ba2d405",
-			"name": "1Helper_Evergreen_SelectableItem_AluminumTravelBriefcaseS1",
-			"factory": "00F21A778FA09839",
-			"blueprint": "00B1E8B7CAC80DFB",
+			"name": "1Helper_Evergreen_SelectableItem_AluminumTravelBriefcaseS2",
+			"factory": "00AC17222A46F42F",
+			"blueprint": "0085E8FC187B918A",
 			"properties": {
 				"GearWall": { "type": "bool", "value": true },
 				"m_mTransform": {
@@ -3200,49 +2995,15 @@
 				}
 			},
 			"outputCopying": {
-				"PickedUp": { "PickedUpTravel1": ["0cb8c2f58bb6104c"] }
-			},
-			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
-		},
-		"cafeaeddd79f4251": {
-			"parent": "cafe68f63ba2d405",
-			"name": "3Helper_Evergreen_SelectableItem_Sieger300SniperCase",
-			"factory": "00419CA04E46D6CD",
-			"blueprint": "00E84061A7F968E1",
-			"properties": {
-				"GearWall": { "type": "bool", "value": true },
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": { "x": 90.0, "y": 0.0, "z": -60.0 },
-						"position": { "x": -0.5196, "y": 0.3, "z": 1.955 }
-					}
-				},
-				"m_bVisibleInBoxReflection": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bVisible": { "type": "bool", "value": true },
-				"m_eRoomBehaviour": {
-					"type": "ZSpatialEntity.ERoomBehaviour",
-					"value": "ROOM_DYNAMIC"
-				},
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "cafeeae5220d4d14",
-					"postInit": true
-				}
-			},
-			"outputCopying": {
-				"PickedUp": { "PickedUpSieger": ["0cb8c2f58bb6104c"] }
+				"PickedUp": { "PickedUpTravel2": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
 		"cafedc9d78bb3619": {
 			"parent": "cafe790f13c76342",
-			"name": "5Helper_Evergreen_SelectableItem_CrimsonRedBriefcase",
-			"factory": "0092EDA6DFA8295C",
-			"blueprint": "00E4ABFB2E0FD028",
+			"name": "5Helper_Evergreen_SelectableItem_ArcticToolBox",
+			"factory": "00E1F8BC67FAA401",
+			"blueprint": "00A96E472A8C062F",
 			"properties": {
 				"GearWall": { "type": "bool", "value": true },
 				"m_mTransform": {
@@ -3268,41 +3029,7 @@
 				}
 			},
 			"outputCopying": {
-				"PickedUp": { "PickedUpLife": ["0cb8c2f58bb6104c"] }
-			},
-			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
-		},
-		"cafefd6034fde8e8": {
-			"parent": "cafe790f13c76342",
-			"name": "6Helper_Evergreen_SelectableItem_OrangePinstripeBriefcase",
-			"factory": "0082723982CCC8E4",
-			"blueprint": "00FE9768C8D64980",
-			"properties": {
-				"GearWall": { "type": "bool", "value": true },
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": { "x": 90.0, "y": 0.0, "z": 0.0 },
-						"position": { "x": 0.0, "y": 0.6, "z": 0.525 }
-					}
-				},
-				"m_bVisibleInBoxReflection": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bVisible": { "type": "bool", "value": true },
-				"m_eRoomBehaviour": {
-					"type": "ZSpatialEntity.ERoomBehaviour",
-					"value": "ROOM_DYNAMIC"
-				},
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "cafeeae5220d4d14",
-					"postInit": true
-				}
-			},
-			"outputCopying": {
-				"PickedUp": { "PickedUpStadia": ["0cb8c2f58bb6104c"] }
+				"PickedUp": { "PickedUpArctic": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
@@ -3342,9 +3069,9 @@
 		},
 		"cafece2434cc1412": {
 			"parent": "cafe790f13c76342",
-			"name": "4Helper_Evergreen_SelectableItem_BlackLeatherBriefcase",
-			"factory": "009D61B685404DBD",
-			"blueprint": "00CE855B578B7843",
+			"name": "4Helper_Evergreen_SelectableItem_OrangePinstripeBriefcase",
+			"factory": "0082723982CCC8E4",
+			"blueprint": "00FE9768C8D64980",
 			"properties": {
 				"GearWall": { "type": "bool", "value": true },
 				"m_mTransform": {
@@ -3370,7 +3097,7 @@
 				}
 			},
 			"outputCopying": {
-				"PickedUp": { "PickedUpClassic": ["0cb8c2f58bb6104c"] }
+				"PickedUp": { "PickedUpStadia": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
@@ -3893,7 +3620,7 @@
 		},
 		"cafee89d3aa55c07": {
 			"parent": "cafe35771dd23f82",
-			"name": "m_fDefaultHeight 5 (undone)",
+			"name": "m_fDefaultHeight 5",
 			"factory": "[assembly:/_pro/design/logic/valuefloat.template?/valuefloat_entityproperty.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuefloat.template?/valuefloat_entityproperty.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -3944,7 +3671,7 @@
 		},
 		"cafe815487582a1b": {
 			"parent": "cafe35771dd23f82",
-			"name": "Set DefaultHeight 5 (undone)",
+			"name": "Set DefaultHeight 5",
 			"factory": "[assembly:/_pro/design/logic/valuefloat.template?/valuefloat_set.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuefloat.template?/valuefloat_set.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -4137,9 +3864,9 @@
 		},
 		"cafe7bfd45f35151": {
 			"parent": "cafe790f13c76342",
-			"name": "1Helper_Evergreen_SelectableItem_TacticiansBriefcase",
-			"factory": "00790D2D3B67B5D6",
-			"blueprint": "00505B0E8FF4113C",
+			"name": "1Helper_Evergreen_SelectableItem_AluminumTravelBriefcaseS1",
+			"factory": "00F21A778FA09839",
+			"blueprint": "00B1E8B7CAC80DFB",
 			"properties": {
 				"GearWall": { "type": "bool", "value": true },
 				"m_mTransform": {
@@ -4165,7 +3892,7 @@
 				}
 			},
 			"outputCopying": {
-				"PickedUp": { "PickedUpSport": ["0cb8c2f58bb6104c"] }
+				"PickedUp": { "PickedUpTravel1": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
@@ -4203,9 +3930,9 @@
 		},
 		"cafeede6f3cb397a": {
 			"parent": "cafefb7b1a412c10",
-			"name": "2Helper_Evergreen_SelectableItem_ChineseBriefcase",
-			"factory": "003F74D6CAE48CFE",
-			"blueprint": "00EC892698A65436",
+			"name": "2Helper_Evergreen_SelectableItem_TacticiansBriefcase",
+			"factory": "00790D2D3B67B5D6",
+			"blueprint": "00505B0E8FF4113C",
 			"properties": {
 				"GearWall": { "type": "bool", "value": true },
 				"m_mTransform": {
@@ -4231,41 +3958,7 @@
 				}
 			},
 			"outputCopying": {
-				"PickedUp": { "PickedUpChinese": ["0cb8c2f58bb6104c"] }
-			},
-			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
-		},
-		"cafe6e5713018682": {
-			"parent": "cafefb7b1a412c10",
-			"name": "5Helper_Evergreen_SelectableItem_PremiereWhiteBriefcase",
-			"factory": "00802D56DBF604F3",
-			"blueprint": "00F843C5A73DEA0C",
-			"properties": {
-				"GearWall": { "type": "bool", "value": true },
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": { "x": 90.0, "y": 0.0, "z": 120.0 },
-						"position": { "x": 0.5196, "y": -0.3, "z": 1.005 }
-					}
-				},
-				"m_bVisibleInBoxReflection": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bVisible": { "type": "bool", "value": true },
-				"m_eRoomBehaviour": {
-					"type": "ZSpatialEntity.ERoomBehaviour",
-					"value": "ROOM_DYNAMIC"
-				},
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "cafeeae5220d4d14",
-					"postInit": true
-				}
-			},
-			"outputCopying": {
-				"PickedUp": { "PickedUpBirth": ["0cb8c2f58bb6104c"] }
+				"PickedUp": { "PickedUpSport": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
@@ -4292,7 +3985,7 @@
 		},
 		"cafefb7b1a412c10": {
 			"parent": "0cb8c2f58bb6104c",
-			"name": "EvergreenMenu 4(undone)",
+			"name": "EvergreenMenu 4",
 			"factory": "[modules:/zevergreenmenuentity.class].pc_entitytype",
 			"blueprint": "[modules:/zevergreenmenuentity.class].pc_entityblueprint",
 			"properties": {
@@ -4312,9 +4005,7 @@
 						"cafea59c8265390e",
 						"cafeede6f3cb397a",
 						"cafe5b0d8b51d052",
-						"cafe17ce7bb2154f",
-						"cafe6e5713018682",
-						"cafef88477eb236a"
+						"cafe17ce7bb2154f"
 					]
 				}
 			},
@@ -4357,9 +4048,9 @@
 		},
 		"cafe5b0d8b51d052": {
 			"parent": "cafefb7b1a412c10",
-			"name": "3Helper_Evergreen_SelectableItem_ArcticToolBox",
-			"factory": "00E1F8BC67FAA401",
-			"blueprint": "00A96E472A8C062F",
+			"name": "3Helper_Evergreen_SelectableItem_BlackLeatherBriefcase",
+			"factory": "009D61B685404DBD",
+			"blueprint": "00CE855B578B7843",
 			"properties": {
 				"GearWall": { "type": "bool", "value": true },
 				"m_mTransform": {
@@ -4385,15 +4076,15 @@
 				}
 			},
 			"outputCopying": {
-				"PickedUp": { "PickedUpArctic": ["0cb8c2f58bb6104c"] }
+				"PickedUp": { "PickedUpClassic": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
 		"cafea59c8265390e": {
 			"parent": "cafefb7b1a412c10",
-			"name": "1Helper_Evergreen_SelectableItem_AluminumTravelBriefcaseS3",
-			"factory": "00652BA50B5DA230",
-			"blueprint": "00A3FA740C9F15BB",
+			"name": "1Helper_Evergreen_SelectableItem_CrimsonRedBriefcase",
+			"factory": "0092EDA6DFA8295C",
+			"blueprint": "00E4ABFB2E0FD028",
 			"properties": {
 				"GearWall": { "type": "bool", "value": true },
 				"m_mTransform": {
@@ -4419,15 +4110,15 @@
 				}
 			},
 			"outputCopying": {
-				"PickedUp": { "PickedUpTravel3": ["0cb8c2f58bb6104c"] }
+				"PickedUp": { "PickedUpLife": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
 		"cafe17ce7bb2154f": {
 			"parent": "cafefb7b1a412c10",
-			"name": "4Helper_Evergreen_SelectableItem_ICAExecutiveBriefcaseMkII",
-			"factory": "00DF506CE387152F",
-			"blueprint": "00FBD52293B7CC9D",
+			"name": "4Helper_Evergreen_SelectableItem_ICABriefcase",
+			"factory": "00A3F2BFAF8DD31F",
+			"blueprint": "00A297BBFAF94713",
 			"properties": {
 				"GearWall": { "type": "bool", "value": true },
 				"m_mTransform": {
@@ -4453,41 +4144,7 @@
 				}
 			},
 			"outputCopying": {
-				"PickedUp": { "PickedUpMK2": ["0cb8c2f58bb6104c"] }
-			},
-			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
-		},
-		"cafef88477eb236a": {
-			"parent": "cafefb7b1a412c10",
-			"name": "6Helper_Evergreen_SelectableItem_SniperCase",
-			"factory": "00AD3C42EABBB596",
-			"blueprint": "0082B3BDCF54F052",
-			"properties": {
-				"GearWall": { "type": "bool", "value": true },
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": { "x": 90.0, "y": 0.0, "z": 120.0 },
-						"position": { "x": 0.5196, "y": -0.3, "z": 0.525 }
-					}
-				},
-				"m_bVisibleInBoxReflection": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bVisible": { "type": "bool", "value": true },
-				"m_eRoomBehaviour": {
-					"type": "ZSpatialEntity.ERoomBehaviour",
-					"value": "ROOM_DYNAMIC"
-				},
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "cafeeae5220d4d14",
-					"postInit": true
-				}
-			},
-			"outputCopying": {
-				"PickedUp": { "PickedUpWide": ["0cb8c2f58bb6104c"] }
+				"PickedUp": { "PickedUpICA": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
@@ -4527,9 +4184,9 @@
 		},
 		"cafe15414d9655ef": {
 			"parent": "cafe4d3a3e55f43f",
-			"name": "5Helper_Evergreen_SelectableItem_PremiereWhiteBriefcase",
-			"factory": "00802D56DBF604F3",
-			"blueprint": "00F843C5A73DEA0C",
+			"name": "5Helper_Evergreen_SelectableItem_Sieger300SniperCase",
+			"factory": "00419CA04E46D6CD",
+			"blueprint": "00E84061A7F968E1",
 			"properties": {
 				"GearWall": { "type": "bool", "value": true },
 				"m_mTransform": {
@@ -4555,7 +4212,7 @@
 				}
 			},
 			"outputCopying": {
-				"PickedUp": { "PickedUpBirth": ["0cb8c2f58bb6104c"] }
+				"PickedUp": { "PickedUpSieger": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
@@ -4582,7 +4239,7 @@
 		},
 		"cafe4d3a3e55f43f": {
 			"parent": "0cb8c2f58bb6104c",
-			"name": "EvergreenMenu 5(undone)",
+			"name": "EvergreenMenu 5",
 			"factory": "[modules:/zevergreenmenuentity.class].pc_entitytype",
 			"blueprint": "[modules:/zevergreenmenuentity.class].pc_entityblueprint",
 			"properties": {
@@ -4601,10 +4258,8 @@
 					"value": [
 						"cafedfac367ad598",
 						"cafef8306f37b51a",
-						"cafeea29175f8dd5",
 						"cafeef713d42d26d",
-						"cafe15414d9655ef",
-						"cafe96d11fa8d484"
+						"cafe15414d9655ef"
 					]
 				}
 			},
@@ -4645,45 +4300,11 @@
 				}
 			}
 		},
-		"cafeea29175f8dd5": {
-			"parent": "cafe4d3a3e55f43f",
-			"name": "3Helper_Evergreen_SelectableItem_ArcticToolBox",
-			"factory": "00E1F8BC67FAA401",
-			"blueprint": "00A96E472A8C062F",
-			"properties": {
-				"GearWall": { "type": "bool", "value": true },
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": { "x": 90.0, "y": 0.0, "z": 60.0 },
-						"position": { "x": 0.5196, "y": 0.3, "z": 1.955 }
-					}
-				},
-				"m_bVisibleInBoxReflection": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bVisible": { "type": "bool", "value": true },
-				"m_eRoomBehaviour": {
-					"type": "ZSpatialEntity.ERoomBehaviour",
-					"value": "ROOM_DYNAMIC"
-				},
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "cafeeae5220d4d14",
-					"postInit": true
-				}
-			},
-			"outputCopying": {
-				"PickedUp": { "PickedUpArctic": ["0cb8c2f58bb6104c"] }
-			},
-			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
-		},
 		"cafedfac367ad598": {
 			"parent": "cafe4d3a3e55f43f",
-			"name": "1Helper_Evergreen_SelectableItem_AluminumTravelBriefcaseS3",
-			"factory": "00652BA50B5DA230",
-			"blueprint": "00A3FA740C9F15BB",
+			"name": "1Helper_Evergreen_SelectableItem_UltimateBlackBriefcase",
+			"factory": "00A4323C760E7D3F",
+			"blueprint": "00DF826CA5AA9AE0",
 			"properties": {
 				"GearWall": { "type": "bool", "value": true },
 				"m_mTransform": {
@@ -4709,15 +4330,15 @@
 				}
 			},
 			"outputCopying": {
-				"PickedUp": { "PickedUpTravel3": ["0cb8c2f58bb6104c"] }
+				"PickedUp": { "PickedUpDeath": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
 		"cafeef713d42d26d": {
 			"parent": "cafe4d3a3e55f43f",
-			"name": "4Helper_Evergreen_SelectableItem_ICAExecutiveBriefcaseMkII",
-			"factory": "00DF506CE387152F",
-			"blueprint": "00FBD52293B7CC9D",
+			"name": "4Helper_Evergreen_SelectableItem_ICABriefcaseMKIII",
+			"factory": "00A2482A88095376",
+			"blueprint": "00B7FC885DF3B543",
 			"properties": {
 				"GearWall": { "type": "bool", "value": true },
 				"m_mTransform": {
@@ -4743,41 +4364,7 @@
 				}
 			},
 			"outputCopying": {
-				"PickedUp": { "PickedUpMK2": ["0cb8c2f58bb6104c"] }
-			},
-			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
-		},
-		"cafe96d11fa8d484": {
-			"parent": "cafe4d3a3e55f43f",
-			"name": "6Helper_Evergreen_SelectableItem_SniperCase",
-			"factory": "00AD3C42EABBB596",
-			"blueprint": "0082B3BDCF54F052",
-			"properties": {
-				"GearWall": { "type": "bool", "value": true },
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": { "x": 90.0, "y": 0.0, "z": 60.0 },
-						"position": { "x": 0.5196, "y": 0.3, "z": 0.525 }
-					}
-				},
-				"m_bVisibleInBoxReflection": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bVisible": { "type": "bool", "value": true },
-				"m_eRoomBehaviour": {
-					"type": "ZSpatialEntity.ERoomBehaviour",
-					"value": "ROOM_DYNAMIC"
-				},
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "cafeeae5220d4d14",
-					"postInit": true
-				}
-			},
-			"outputCopying": {
-				"PickedUp": { "PickedUpWide": ["0cb8c2f58bb6104c"] }
+				"PickedUp": { "PickedUpMK3": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
 		},
@@ -4918,7 +4505,7 @@
 		},
 		"cafeb24f6d71dda0": {
 			"parent": "cafeadb57659cb1c",
-			"name": "WaveformGenerator 3 to 4 (undone)",
+			"name": "WaveformGenerator 3 to 4",
 			"factory": "[modules:/zwaveformgeneratorentity.class].pc_entitytype",
 			"blueprint": "[modules:/zwaveformgeneratorentity.class].pc_entityblueprint",
 			"properties": {
@@ -4938,7 +4525,7 @@
 		},
 		"cafe951796e8a92f": {
 			"parent": "cafeadb57659cb1c",
-			"name": "WaveformGenerator 4 to 5 (undone)",
+			"name": "WaveformGenerator 4 to 5",
 			"factory": "[modules:/zwaveformgeneratorentity.class].pc_entitytype",
 			"blueprint": "[modules:/zwaveformgeneratorentity.class].pc_entityblueprint",
 			"properties": {
@@ -5143,7 +4730,7 @@
 		},
 		"cafeaf6480432543": {
 			"parent": "cafe35771dd23f82",
-			"name": "EvergreenMenuCounterScroll 4 (undone)",
+			"name": "EvergreenMenuCounterScroll 4",
 			"factory": "[modules:/zevergreenmenucounterscrollentity.class].pc_entitytype",
 			"blueprint": "[modules:/zevergreenmenucounterscrollentity.class].pc_entityblueprint",
 			"properties": {
@@ -5180,7 +4767,7 @@
 		},
 		"cafeea5866fcad63": {
 			"parent": "cafe35771dd23f82",
-			"name": "EvergreenMenuCounterScroll 5 (undone)",
+			"name": "EvergreenMenuCounterScroll 5",
 			"factory": "[modules:/zevergreenmenucounterscrollentity.class].pc_entitytype",
 			"blueprint": "[modules:/zevergreenmenucounterscrollentity.class].pc_entityblueprint",
 			"properties": {
@@ -5234,7 +4821,7 @@
 		},
 		"cafe4452d094c802": {
 			"parent": "cafe35771dd23f82",
-			"name": "m_fDefaultHeight 4 (undone)",
+			"name": "m_fDefaultHeight 4",
 			"factory": "[assembly:/_pro/design/logic/valuefloat.template?/valuefloat_entityproperty.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuefloat.template?/valuefloat_entityproperty.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -5263,7 +4850,7 @@
 		},
 		"cafe6ed56c4c6b81": {
 			"parent": "cafe35771dd23f82",
-			"name": "Set DefaultHeight 4 (undone)",
+			"name": "Set DefaultHeight 4",
 			"factory": "[assembly:/_pro/design/logic/valuefloat.template?/valuefloat_set.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuefloat.template?/valuefloat_set.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -5318,6 +4905,21 @@
 					"value": "cafef0271a3f6e02",
 					"postInit": true
 				}
+			}
+		},
+		"cafee50ebc55d519": {
+			"parent": "0cb8c2f58bb6104c",
+			"name": "GameEventListener",
+			"factory": "[modules:/zgameeventlistenerentity.class].pc_entitytype",
+			"blueprint": "[modules:/zgameeventlistenerentity.class].pc_entityblueprint",
+			"properties": {
+				"m_eEvent": {
+					"type": "EGameEventType",
+					"value": "GET_IntroCutEnd"
+				}
+			},
+			"events": {
+				"EventOccurred": { "SetAngles": ["cafe951c5a0aa243"] }
 			}
 		}
 	},
