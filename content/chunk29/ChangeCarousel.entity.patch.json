@@ -532,17 +532,6 @@
 		},
 		{
 			"SubEntityOperation": [
-				"a87cc9c6da2e525c",
-				{
-					"AddProperty": [
-						"m_bVisible",
-						{ "type": "bool", "value": false }
-					]
-				}
-			]
-		},
-		{
-			"SubEntityOperation": [
 				"582c9bcfd32710e2",
 				{
 					"AddProperty": [
@@ -830,6 +819,8 @@
 						"PickedUpMilitary": { "In": ["cafe104dcd751c8d"] },
 						"PickedUpMK2": { "In": ["cafec351b70a528a"] },
 						"PickedUpMK3": { "In": ["cafea43700eabc0a"] },
+						"PickedUpPaisley": { "In": ["cafe6bab0774b437"] },
+						"PickedUpRattan": { "In": ["cafe25cfbc0d1de1"] },
 						"PickedUpSieger": { "In": ["cafec093623cd704"] },
 						"PickedUpSport": { "In": ["cafe202d14d211ec"] },
 						"PickedUpStadia": { "In": ["cafeb0c3e67ac603"] },
@@ -1423,7 +1414,7 @@
 				"cafef5e7920c18e1",
 				{
 					"parent": "cafe9e8a07f74413",
-					"name": "VBS",
+					"name": "VBSClassic",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -1555,7 +1546,28 @@
 									}
 								},
 								{
+									"ref": "cafe6176e54cb750",
+									"value": {
+										"type": "bool",
+										"value": false
+									}
+								},
+								{
+									"ref": "cafe69cf1e417162",
+									"value": {
+										"type": "bool",
+										"value": false
+									}
+								},
+								{
 									"ref": "cafef62f3a0fb64e",
+									"value": {
+										"type": "bool",
+										"value": false
+									}
+								},
+								{
+									"ref": "cafeaf31c0390079",
 									"value": {
 										"type": "bool",
 										"value": false
@@ -1621,7 +1633,7 @@
 				"cafe0d0df100d813",
 				{
 					"parent": "cafe9f1965e52523",
-					"name": "VBS",
+					"name": "VBSChinese",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -1641,7 +1653,7 @@
 				"cafebb883524f3a8",
 				{
 					"parent": "cafe58db1a228e8c",
-					"name": "VBS",
+					"name": "VBSBirth",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -1661,7 +1673,7 @@
 				"cafeec3cd9491a99",
 				{
 					"parent": "cafe7dc7ba06620c",
-					"name": "VBS",
+					"name": "VBSArctic",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -1681,7 +1693,7 @@
 				"cafec7f887a45019",
 				{
 					"parent": "cafe0392c92f9335",
-					"name": "VBS",
+					"name": "VBSDeath",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -1701,7 +1713,7 @@
 				"cafe8916aa7fec52",
 				{
 					"parent": "cafe720fdba46afe",
-					"name": "VBS",
+					"name": "VBSDeluxe",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -1721,7 +1733,7 @@
 				"cafee5d6b55327e9",
 				{
 					"parent": "cafe74ed51435b9e",
-					"name": "VBS",
+					"name": "VBSDJ",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -1741,7 +1753,7 @@
 				"cafec7f68d3961ad",
 				{
 					"parent": "cafe1706ee9c4ce0",
-					"name": "VBS",
+					"name": "VBSGold",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -1761,7 +1773,7 @@
 				"cafeae224b656ebf",
 				{
 					"parent": "cafe787e1f0ad268",
-					"name": "VBS",
+					"name": "VBSHunt",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -1781,7 +1793,7 @@
 				"cafebd2585c3c4f4",
 				{
 					"parent": "cafe84887eb1b4e7",
-					"name": "VBS",
+					"name": "VBSICA",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -1801,7 +1813,7 @@
 				"cafe14ce9ba22662",
 				{
 					"parent": "cafe4930cf9bad71",
-					"name": "VBS",
+					"name": "VBSLeather",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -1821,7 +1833,7 @@
 				"cafed29db1a700f2",
 				{
 					"parent": "cafe37031310b3de",
-					"name": "VBS",
+					"name": "VBSLife",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -1841,7 +1853,7 @@
 				"cafe32c750ba4da6",
 				{
 					"parent": "cafe104dcd751c8d",
-					"name": "VBS",
+					"name": "VBSMilitary",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -1861,7 +1873,7 @@
 				"cafebb51379ddf6b",
 				{
 					"parent": "cafec351b70a528a",
-					"name": "VBS",
+					"name": "VBSMK2",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -1881,7 +1893,7 @@
 				"cafeb84f50f0b05f",
 				{
 					"parent": "cafea43700eabc0a",
-					"name": "VBS",
+					"name": "VBSMK3",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -1901,7 +1913,7 @@
 				"cafef62f3a0fb64e",
 				{
 					"parent": "cafec093623cd704",
-					"name": "VBS",
+					"name": "VBSSieger",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -1921,7 +1933,7 @@
 				"cafe662a0f648ee0",
 				{
 					"parent": "cafeb0c3e67ac603",
-					"name": "VBS",
+					"name": "VBSStadia",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -1941,7 +1953,7 @@
 				"cafe388929c12871",
 				{
 					"parent": "cafecd166034c43f",
-					"name": "VBS",
+					"name": "VBSTool",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -1961,7 +1973,7 @@
 				"cafedf8d7434946f",
 				{
 					"parent": "cafed3f81fffbd87",
-					"name": "VBS",
+					"name": "VBSTravel1",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -1981,7 +1993,7 @@
 				"cafe79e9821271b7",
 				{
 					"parent": "cafee9ac02de0416",
-					"name": "VBS",
+					"name": "VBSTravel2",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -2001,7 +2013,7 @@
 				"cafeec53a646708a",
 				{
 					"parent": "cafef89dc1bcc4d0",
-					"name": "VBS",
+					"name": "VBSTravel3",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -2021,7 +2033,7 @@
 				"cafe7aa97e03f47f",
 				{
 					"parent": "cafecebebd16b3d3",
-					"name": "VBS",
+					"name": "VBSTwitch",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -2041,7 +2053,7 @@
 				"cafe322199922b7a",
 				{
 					"parent": "cafef133c42eaa36",
-					"name": "VBS",
+					"name": "VBSWide",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -2086,7 +2098,7 @@
 				"cafeaf31c0390079",
 				{
 					"parent": "cafe202d14d211ec",
-					"name": "VBS",
+					"name": "VBSSport",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -2094,6 +2106,96 @@
 							"type": "SEntityTemplateReference",
 							"value": {
 								"ref": "cafe1c15bfc2f029",
+								"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe6bab0774b437",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButPaisley",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": { "In": ["cafea4987d6a7a13"] },
+						"Out02": {
+							"SetValue": [
+								{
+									"ref": "cafe6176e54cb750",
+									"value": {
+										"type": "bool",
+										"value": true
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe6176e54cb750",
+				{
+					"parent": "cafe6bab0774b437",
+					"name": "VBSPaisley",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": {
+								"ref": "cafe7933adc27239",
+								"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe25cfbc0d1de1",
+				{
+					"parent": "cafef41833e7cb1d",
+					"name": "SetAllFalseButRattan",
+					"factory": "[modules:/zsignalforkentity_repositoryid.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_repositoryid.class].pc_entityblueprint",
+					"events": {
+						"Out01": { "In": ["cafea4987d6a7a13"] },
+						"Out02": {
+							"SetValue": [
+								{
+									"ref": "cafe69cf1e417162",
+									"value": {
+										"type": "bool",
+										"value": true
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe69cf1e417162",
+				{
+					"parent": "cafe25cfbc0d1de1",
+					"name": "VBSRattan",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": {
+								"ref": "cafeba30c86d9983",
 								"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
 							}
 						}

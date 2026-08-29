@@ -1,0 +1,161 @@
+{
+	"tempHash": "000F88DDE2BA0E36",
+	"tbluHash": "00986FFD63C35780",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"1c422c35c9459985",
+				{
+					"AddEventConnection": [
+						"OnTrue",
+						"SetTrue",
+						"cafe9644596a8c03"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"1c422c35c9459985",
+				{
+					"AddEventConnection": [
+						"OnFalse",
+						"SetFalse",
+						"cafe9644596a8c03"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"b9b1c507d0b07043",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_rValueEntity",
+						"value": "cafe16bfbdd16799"
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe583d14e939fb",
+				{
+					"parent": "7ad3ed4b84b88d45",
+					"name": "EventChannelTransmitter_bool",
+					"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_bool.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_bool.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rChannelToken": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe17daaa3c49b0",
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe17daaa3c49b0",
+				{
+					"parent": "cafe583d14e939fb",
+					"name": "Token_ID_BriefcaseIsEmpty",
+					"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+					"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sName": {
+							"type": "ZString",
+							"value": "BriefcaseIsEmptyRattan"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe9644596a8c03",
+				{
+					"parent": "cafe583d14e939fb",
+					"name": "Empty",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bValue": { "type": "bool", "value": true },
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						}
+					},
+					"events": {
+						"OnTrue": { "TransmitTrue": ["cafe583d14e939fb"] },
+						"OnFalse": {
+							"TransmitFalse": ["cafe583d14e939fb"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe296b930e69ff",
+				{
+					"parent": "cafe16bfbdd16799",
+					"name": "Token_ID_CaseOpened",
+					"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+					"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sName": {
+							"type": "ZString",
+							"value": "CaseOpenedRattan"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafec5207a82a756",
+				{
+					"parent": "cafe16bfbdd16799",
+					"name": "EventChannelReceiver_ValueBool",
+					"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_valuebool.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_valuebool.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rChannelToken": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe296b930e69ff"
+						},
+						"m_bValue": { "type": "bool", "value": false }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe16bfbdd16799",
+				{
+					"parent": "494d9eeea4c604bb",
+					"name": "VROpenSuitcase or MyMod",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ANY"
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								"ca21cce848130ab6",
+								"cafec5207a82a756"
+							],
+							"postInit": true
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

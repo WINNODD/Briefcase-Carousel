@@ -376,7 +376,7 @@
 						"PollTrue": {
 							"GetRepositoryID": ["cafe383efdb4a801"]
 						},
-						"PollFalse": { "Poll": ["cafe288899cb25b8"] }
+						"PollFalse": { "Poll": ["cafefb357bb2c5c0"] }
 					}
 				}
 			]
@@ -1562,6 +1562,136 @@
 						"m_sId": {
 							"type": "ZGuid",
 							"value": "56a7e2d3-9b95-4d7a-bcbb-f05aaadd13b6"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": [
+								"6569e65842f294e0",
+								"ca7308efe3d5668a"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeba30c86d9983",
+				{
+					"parent": "cafe96887fb9f957",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "Rattan"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe96887fb9f957",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll Rattan",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafeba30c86d9983"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafe4ec32c09892c"]
+						},
+						"PollFalse": { "Poll": ["cafe288899cb25b8"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe4ec32c09892c",
+				{
+					"parent": "cafe96887fb9f957",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "c55d7ede-9071-4afe-bf90-5d770cca674a"
+						}
+					},
+					"events": {
+						"RepositoryID": {
+							"RepositoryId": [
+								"6569e65842f294e0",
+								"ca7308efe3d5668a"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7933adc27239",
+				{
+					"parent": "cafefb357bb2c5c0",
+					"name": "Persistent Bool",
+					"factory": "[modules:/zpersistentbool.class].pc_entitytype",
+					"blueprint": "[modules:/zpersistentbool.class].pc_entityblueprint",
+					"properties": {
+						"m_sUniqueIdentifier": {
+							"type": "ZString",
+							"value": "Paisley"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafefb357bb2c5c0",
+				{
+					"parent": "cafeeb8adf318ed0",
+					"name": "Poll Paisley",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe7933adc27239"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"GetRepositoryID": ["cafe1658da7e947a"]
+						},
+						"PollFalse": { "Poll": ["cafe96887fb9f957"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe1658da7e947a",
+				{
+					"parent": "cafefb357bb2c5c0",
+					"name": "RepositoryItem",
+					"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+					"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "2eae400c-a045-40dc-aa7d-c984a574090b"
 						}
 					},
 					"events": {
