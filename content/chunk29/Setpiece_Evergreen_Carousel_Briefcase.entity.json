@@ -277,11 +277,7 @@
 					"type": "SMatrix43",
 					"value": {
 						"rotation": { "x": -0.0, "y": 0.0, "z": 0.0 },
-						"position": {
-							"x": 0.0,
-							"y": 0.0,
-							"z": 7.450580596923828e-9
-						}
+						"position": { "x": 0.0, "y": 0.0, "z": 0.0 }
 					}
 				},
 				"m_PrimitiveScale": {
@@ -4919,8 +4915,59 @@
 				}
 			},
 			"events": {
-				"EventOccurred": { "SetAngles": ["cafe951c5a0aa243"] }
+				"EventOccurred": {
+					"Start": ["cafee08b4829d9bc"],
+					"In": ["cafe4aa391283493"]
+				}
 			}
+		},
+		"cafe7973fcf52d25": {
+			"parent": "cafee50ebc55d519",
+			"name": "Lerp 5 to 0(done)",
+			"factory": "[modules:/zmathlerp_svector3.class].pc_entitytype",
+			"blueprint": "[modules:/zmathlerp_svector3.class].pc_entityblueprint",
+			"properties": {
+				"m_bGenerateOnStart": { "type": "bool", "value": true },
+				"m_A": {
+					"type": "SVector3",
+					"value": { "x": 0.0, "y": 0.0, "z": -60.0 }
+				},
+				"m_B": {
+					"type": "SVector3",
+					"value": { "x": 0.0, "y": 0.0, "z": 0.0 }
+				}
+			},
+			"events": { "Lerp": { "Angles": ["cafe951c5a0aa243"] } }
+		},
+		"cafee08b4829d9bc": {
+			"parent": "cafee50ebc55d519",
+			"name": "WaveformGenerator 5 to 0",
+			"factory": "[modules:/zwaveformgeneratorentity.class].pc_entitytype",
+			"blueprint": "[modules:/zwaveformgeneratorentity.class].pc_entityblueprint",
+			"properties": {
+				"m_bInitiallyActive": { "type": "bool", "value": false },
+				"m_fFrequency": { "type": "float32", "value": 1.0 },
+				"m_fScale": { "type": "float32", "value": 1.0 },
+				"m_fOffset": { "type": "float32", "value": 0.0 },
+				"m_fStartTime": { "type": "float32", "value": -0.25 },
+				"m_nValuesPrSec": { "type": "uint32", "value": 144 },
+				"m_eCurveType": {
+					"type": "ZWaveformGeneratorEntity.ECurveType",
+					"value": "CURVE_TYPE_SINE",
+					"postInit": true
+				}
+			},
+			"events": { "Value": { "T": ["cafe7973fcf52d25"] } }
+		},
+		"cafe4aa391283493": {
+			"parent": "cafee50ebc55d519",
+			"name": "TimerSimple Rotating 5 to 0 (done)",
+			"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Delay time (ms)": { "type": "int32", "value": 500 }
+			},
+			"events": { "Out": { "Stop": ["cafee08b4829d9bc"] } }
 		}
 	},
 	"propertyOverrides": [],
