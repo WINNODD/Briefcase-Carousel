@@ -5064,7 +5064,7 @@
 					"type": "SVector3",
 					"value": { "x": 0.71, "y": 0.71, "z": 2.5 }
 				},
-				"m_bVisible": { "type": "bool", "value": true },
+				"m_bVisible": { "type": "bool", "value": false },
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
 					"value": "cafef0271a3f6e02",

@@ -609,24 +609,6 @@
 		},
 		{
 			"SubEntityOperation": [
-				"347b1bff7fb28b4b",
-				{
-					"PatchArrayPropertyValue": [
-						"m_Clients",
-						[
-							{
-								"AddItemAfter": [
-									"fd84bfb77b15a5dc",
-									"cafef41833e7cb1d"
-								]
-							}
-						]
-					]
-				}
-			]
-		},
-		{
-			"SubEntityOperation": [
 				"78d485d29d164a7c",
 				{
 					"AddProperty": [
@@ -706,31 +688,14 @@
 			"SubEntityOperation": [
 				"cdfdf0d8a3c0d195",
 				{
-					"PatchArrayPropertyValue": [
-						"m_Clients",
-						[
-							{
-								"AddItemAfter": [
-									"7febe4a3f993c2e2",
-									"cafef41833e7cb1d"
-								]
-							}
-						]
-					]
-				}
-			]
-		},
-		{
-			"SubEntityOperation": [
-				"cdfdf0d8a3c0d195",
-				{
-					"AddProperty": [
-						"m_eRoomBehaviour",
-						{
-							"type": "ZSpatialEntity.ERoomBehaviour",
-							"value": "ROOM_DYNAMIC"
+					"SetPropertyValue": {
+						"property_name": "m_vRoomMin",
+						"value": {
+							"x": -3.321000099182129,
+							"y": -4.943850040435791,
+							"z": -4.854219913482666
 						}
-					]
+					}
 				}
 			]
 		},
