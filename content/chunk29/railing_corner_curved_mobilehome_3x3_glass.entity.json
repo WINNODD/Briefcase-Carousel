@@ -1,0 +1,39 @@
+{
+	"tempHash": "0070E70619ED0977",
+	"tbluHash": "00E67404DBADE27C",
+	"rootEntity": "0b42cb970d25fdbc",
+	"entities": {
+		"0b42cb970d25fdbc": {
+			"parent": null,
+			"name": "GeomEntity01",
+			"factory": "[assembly:/templates/aspectdummy.aspect]([modules:/zgeomentity.class].entitytype,[modules:/zstaticphysicsaspect.class].entitytype,[modules:/zcollisionresourceshapeaspect.class].entitytype).pc_entitytype",
+			"blueprint": "[assembly:/templates/aspectdummy.aspect]([modules:/zgeomentity.class].entitytype,[modules:/zstaticphysicsaspect.class].entitytype,[modules:/zcollisionresourceshapeaspect.class].entitytype).pc_entityblueprint",
+			"properties": {
+				"m_ResourceID": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/_pro/environment/geometry/levels/miami/mobilehome_modules_a.wl2?/railing_corner_curved_mobilehome_3x3_glass.linkedprim].pc_linkedprim",
+						"flag": "5F"
+					}
+				},
+				"m_CollisionResourceID": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/_pro/environment/geometry/levels/miami/mobilehome_modules_a.wl2?/railing_corner_curved_mobilehome_3x3_glass.linkedprim].pc_coll",
+						"flag": "5F"
+					}
+				}
+			}
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [],
+	"extraBlueprintDependencies": [],
+	"comments": []
+}

@@ -457,7 +457,7 @@
 			}
 		},
 		"cafefbd0a34b9bce": {
-			"parent": "cafe01ac4a6e78e3",
+			"parent": "cafef0271a3f6e02",
 			"name": "fitted_wardrobe_carousel_lightbulb",
 			"factory": "00F899BCC90474E4",
 			"blueprint": "[assembly:/templates/geometrytemplatestaticcoll.template?/geomentity01.entitytemplate].pc_entityblueprint",
@@ -5046,6 +5046,221 @@
 				"PickedUp": { "PickedUpRattan": ["0cb8c2f58bb6104c"] }
 			},
 			"subsets": { "AudioEmitters": ["0cb8c2f58bb6104c"] }
+		},
+		"cafebca17df71180": {
+			"parent": "cafef0271a3f6e02",
+			"name": "bank_teller_corner_a_glass",
+			"factory": "[assembly:/_pro/environment/geometry/kits/bank/bank_teller_cubes_a.wl2?/bank_teller_corner_a_glass.prim].pc_entitytype",
+			"blueprint": "[assembly:/templates/geometrytemplatestaticcoll.template?/geomentity01.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": -0.0, "y": 0.0, "z": -90.0 },
+						"position": { "x": 1.26, "y": -0.71, "z": 1.75 }
+					}
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": { "x": 0.71, "y": 0.71, "z": 2.5 }
+				},
+				"m_bVisible": { "type": "bool", "value": true },
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafef0271a3f6e02",
+					"postInit": true
+				}
+			}
+		},
+		"cafe10391d95d725": {
+			"parent": "cafebca17df71180",
+			"name": "generic_glass_c_shattered",
+			"factory": "[assembly:/_pro/environment/materials/generic/glass/generic_glass_c_shattered.mi].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/materials/generic/glass/generic_glass_c_shattered.mi].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": -0.0, "y": 0.0, "z": -90.0 },
+						"position": {
+							"x": 14.36201000213623,
+							"y": 0.8854010105133057,
+							"z": 0.00092600000789389
+						}
+					}
+				},
+				"Override": { "type": "bool", "value": true },
+				"ConstantVector2D_01_Value_op": {
+					"type": "IRenderMaterialEntity.EModifierOperation",
+					"value": "eReplace"
+				},
+				"ConstantVector2D_01_Value": {
+					"type": "SVector2",
+					"value": { "x": 4.0, "y": 2.6600000858306885 }
+				},
+				"ConstantVector1D_11_Value_op": {
+					"type": "IRenderMaterialEntity.EModifierOperation",
+					"value": "eReplace"
+				},
+				"ConstantVector1D_11_Value": {
+					"type": "float32",
+					"value": 0.0
+				},
+				"Texture2D_02_enab": { "type": "bool", "value": false },
+				"ConstantColorRGB_01_Value_op": {
+					"type": "IRenderMaterialEntity.EModifierOperation",
+					"value": "eReplace"
+				},
+				"ConstantColorRGB_01_Value": {
+					"type": "SColorRGB",
+					"value": "#000000"
+				},
+				"Clients": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafebca17df71180"],
+					"postInit": true
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafebca17df71180",
+					"postInit": true
+				}
+			}
+		},
+		"cafedf9d01ef7e13": {
+			"parent": "0cb8c2f58bb6104c",
+			"name": "GlassShiftLogic",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafec85b0962a4c2": {
+			"parent": "cafedf9d01ef7e13",
+			"name": "WaveformGenerator out",
+			"factory": "[modules:/zwaveformgeneratorentity.class].pc_entitytype",
+			"blueprint": "[modules:/zwaveformgeneratorentity.class].pc_entityblueprint",
+			"properties": {
+				"m_bInitiallyActive": { "type": "bool", "value": false },
+				"m_fFrequency": { "type": "float32", "value": 0.5 },
+				"m_fScale": { "type": "float32", "value": 1.0 },
+				"m_fOffset": { "type": "float32", "value": 0.5 },
+				"m_fStartTime": { "type": "float32", "value": -0.25 },
+				"m_nValuesPrSec": { "type": "uint32", "value": 144 },
+				"m_eCurveType": {
+					"type": "ZWaveformGeneratorEntity.ECurveType",
+					"value": "CURVE_TYPE_SINE",
+					"postInit": true
+				}
+			},
+			"events": { "Value": { "T": ["cafe4d085d209cbd"] } }
+		},
+		"cafec8d56c45dfbf": {
+			"parent": "cafedf9d01ef7e13",
+			"name": "Lerp in",
+			"factory": "[modules:/zmathlerp_svector3.class].pc_entitytype",
+			"blueprint": "[modules:/zmathlerp_svector3.class].pc_entityblueprint",
+			"properties": {
+				"m_bGenerateOnStart": { "type": "bool", "value": true },
+				"m_A": {
+					"type": "SVector3",
+					"value": { "x": 0.0, "y": 0.0, "z": 0.0 }
+				},
+				"m_B": {
+					"type": "SVector3",
+					"value": { "x": 0.0, "y": 0.0, "z": 0.0 }
+				}
+			},
+			"events": { "Lerp": { "Position": ["cafeb1bff03e273d"] } }
+		},
+		"cafe85f2a0068442": {
+			"parent": "cafedf9d01ef7e13",
+			"name": "TimerSimple out",
+			"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Delay time (ms)": { "type": "int32", "value": 1000 }
+			},
+			"events": {
+				"Out": {
+					"SetTrue": ["cafe6a3868bd4067"],
+					"Stop": ["cafec85b0962a4c2", "cafea62ca3c2e4e4"]
+				}
+			}
+		},
+		"cafeb1bff03e273d": {
+			"parent": "cafedf9d01ef7e13",
+			"name": "SetPosition",
+			"factory": "[modules:/zsetpositionentity.class].pc_entitytype",
+			"blueprint": "[modules:/zsetpositionentity.class].pc_entityblueprint",
+			"properties": {
+				"m_Entity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe09495e1ddd3e"
+				},
+				"m_bSetLocalPosition": { "type": "bool", "value": true }
+			}
+		},
+		"cafe4d085d209cbd": {
+			"parent": "cafedf9d01ef7e13",
+			"name": "Lerp out",
+			"factory": "[modules:/zmathlerp_svector3.class].pc_entitytype",
+			"blueprint": "[modules:/zmathlerp_svector3.class].pc_entityblueprint",
+			"properties": {
+				"m_bGenerateOnStart": { "type": "bool", "value": true },
+				"m_A": {
+					"type": "SVector3",
+					"value": { "x": 0.0, "y": 0.0, "z": 0.0 }
+				},
+				"m_B": {
+					"type": "SVector3",
+					"value": { "x": 0.0, "y": 0.0, "z": 0.0 }
+				}
+			},
+			"events": { "Lerp": { "Position": ["cafeb1bff03e273d"] } }
+		},
+		"cafe6a3868bd4067": {
+			"parent": "cafedf9d01ef7e13",
+			"name": "NotShifting",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": true }
+			},
+			"events": { "OnFalse": { "Send": ["cafe20af999b5d37"] } }
+		},
+		"cafe12c11c51da79": {
+			"parent": "cafedf9d01ef7e13",
+			"name": "TimerSimple in",
+			"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Delay time (ms)": { "type": "int32", "value": 1000 }
+			},
+			"events": {
+				"Out": {
+					"SetTrue": ["cafe6a3868bd4067"],
+					"Stop": ["cafe86d292d148d2", "cafe139d42dc0d1a"]
+				}
+			}
+		},
+		"cafe86d292d148d2": {
+			"parent": "cafedf9d01ef7e13",
+			"name": "WaveformGenerator in",
+			"factory": "[modules:/zwaveformgeneratorentity.class].pc_entitytype",
+			"blueprint": "[modules:/zwaveformgeneratorentity.class].pc_entityblueprint",
+			"properties": {
+				"m_bInitiallyActive": { "type": "bool", "value": false },
+				"m_fFrequency": { "type": "float32", "value": 0.5 },
+				"m_fScale": { "type": "float32", "value": 1.0 },
+				"m_fOffset": { "type": "float32", "value": 0.5 },
+				"m_fStartTime": { "type": "float32", "value": -0.25 },
+				"m_nValuesPrSec": { "type": "uint32", "value": 144 },
+				"m_eCurveType": {
+					"type": "ZWaveformGeneratorEntity.ECurveType",
+					"value": "CURVE_TYPE_SINE",
+					"postInit": true
+				}
+			},
+			"events": { "Value": { "T": ["cafec8d56c45dfbf"] } }
 		}
 	},
 	"propertyOverrides": [],
